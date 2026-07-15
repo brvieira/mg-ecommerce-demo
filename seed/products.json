@@ -1,0 +1,4002 @@
+[
+  {
+    "name": "Nike Air Force 1 '07",
+    "description": "O icônico cano baixo em couro branco que definiu o streetwear desde 1982. Solado Air encapsulado para amortecimento discreto, entressola em borracha durável e cabedal em couro legítimo que envelhece bem com o uso. Um clássico atemporal que combina com qualquer produção.",
+    "brand": {
+      "id": "nike",
+      "name": "Nike"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro",
+      "tipoSola": "Borracha com câmara de ar"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "NIK-AIRF-PRE-36-001",
+        "color": "Preto",
+        "size": "36",
+        "price": 547.18,
+        "inventory": 15,
+        "gtin": "7890000000001"
+      },
+      {
+        "sku": "NIK-AIRF-BRA-39-002",
+        "color": "Branco",
+        "size": "39",
+        "price": 531.84,
+        "inventory": 40,
+        "gtin": "7890000000002"
+      }
+    ]
+  },
+  {
+    "name": "Nike Air Max 90",
+    "description": "Lançado em 1990, traz a unidade Air visível no calcanhar para amortecimento visível e responsivo. Cabedal combina couro, camurça e mesh em blocos de cor contrastantes, remetendo ao design original inspirado em corrida. Solado waffle proporciona tração em diferentes superfícies.",
+    "brand": {
+      "id": "nike",
+      "name": "Nike"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro e mesh",
+      "tipoSola": "Borracha waffle com câmara de ar visível"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "NIK-AIRM-BRA-37-003",
+        "color": "Branco",
+        "size": "37",
+        "price": 568.21,
+        "inventory": 24,
+        "gtin": "7890000000003"
+      },
+      {
+        "sku": "NIK-AIRM-CIN-40-004",
+        "color": "Cinza",
+        "size": "40",
+        "price": 623.57,
+        "inventory": 37,
+        "gtin": "7890000000004"
+      }
+    ]
+  },
+  {
+    "name": "Nike Air Max 270",
+    "description": "Conta com a maior unidade Air já colocada em um tênis Nike, projetada para amortecimento sob o calcanhar em cada passo. Cabedal em mesh respirável com sobreposições sintéticas oferece suporte estruturado e visual moderno. Ideal para uso urbano o dia todo.",
+    "brand": {
+      "id": "nike",
+      "name": "Nike"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Mesh e sintético",
+      "tipoSola": "Borracha com unidade Air 270°"
+    },
+    "imageRefs": [
+      "calcados-3",
+      "calcados-4"
+    ],
+    "skus": [
+      {
+        "sku": "NIK-AIRM-CIN-38-005",
+        "color": "Cinza",
+        "size": "38",
+        "price": 400.88,
+        "inventory": 40,
+        "gtin": "7890000000005"
+      },
+      {
+        "sku": "NIK-AIRM-AZU-41-006",
+        "color": "Azul",
+        "size": "41",
+        "price": 438.7,
+        "inventory": 11,
+        "gtin": "7890000000006"
+      }
+    ]
+  },
+  {
+    "name": "Nike Revolution 6",
+    "description": "Tênis de corrida de entrada com espuma macia que absorve impacto sem pesar. Cabedal em mesh respirável mantém o pé fresco durante o treino, enquanto o solado de borracha oferece tração confiável em diversas superfícies. Ótimo custo-benefício para quem está começando a correr.",
+    "brand": {
+      "id": "nike",
+      "name": "Nike"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Mesh respirável",
+      "tipoSola": "EVA"
+    },
+    "imageRefs": [
+      "calcados-4",
+      "calcados-5"
+    ],
+    "skus": [
+      {
+        "sku": "NIK-REVO-AZU-39-007",
+        "color": "Azul",
+        "size": "39",
+        "price": 657.97,
+        "inventory": 7,
+        "gtin": "7890000000007"
+      },
+      {
+        "sku": "NIK-REVO-AZU-42-008",
+        "color": "Azul Marinho",
+        "size": "42",
+        "price": 487.54,
+        "inventory": 6,
+        "gtin": "7890000000008"
+      }
+    ]
+  },
+  {
+    "name": "Nike Dunk Low Retro",
+    "description": "Reedição fiel do clássico de basquete dos anos 80, com cabedal em couro premium e blocos de cor icônicos. Entressola de espuma e solado emborrachado garantem estabilidade lateral, enquanto o design atemporal virou item cult no streetwear atual.",
+    "brand": {
+      "id": "nike",
+      "name": "Nike"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro premium",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-5",
+      "calcados-6"
+    ],
+    "skus": [
+      {
+        "sku": "NIK-DUNK-AZU-40-009",
+        "color": "Azul Marinho",
+        "size": "40",
+        "price": 400.16,
+        "inventory": 29,
+        "gtin": "7890000000009"
+      },
+      {
+        "sku": "NIK-DUNK-VER-43-010",
+        "color": "Vermelho",
+        "size": "43",
+        "price": 638.72,
+        "inventory": 34,
+        "gtin": "7890000000010"
+      }
+    ]
+  },
+  {
+    "name": "Nike Pegasus 40",
+    "description": "Modelo de corrida mais vendido da Nike, com espuma ZoomX combinada a duas unidades Zoom Air para retorno de energia responsivo em qualquer ritmo. Cabedal em engineered mesh se adapta ao formato do pé e melhora a ventilação em treinos longos.",
+    "brand": {
+      "id": "nike",
+      "name": "Nike"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Mesh engenheirado",
+      "tipoSola": "ZoomX com Zoom Air"
+    },
+    "imageRefs": [
+      "calcados-6",
+      "calcados-1"
+    ],
+    "skus": [
+      {
+        "sku": "NIK-PEGA-VER-41-011",
+        "color": "Vermelho",
+        "size": "41",
+        "price": 587.54,
+        "inventory": 7,
+        "gtin": "7890000000011"
+      },
+      {
+        "sku": "NIK-PEGA-VER-44-012",
+        "color": "Verde",
+        "size": "44",
+        "price": 553.07,
+        "inventory": 22,
+        "gtin": "7890000000012"
+      }
+    ]
+  },
+  {
+    "name": "Nike Cortez",
+    "description": "Um dos tênis mais antigos e influentes da Nike, lançado em 1972 e usado até hoje como ícone retrô. Cabedal em nylon e couro sintético com a clássica listra lateral, solado de borracha vulcanizada leve e confortável para o dia a dia.",
+    "brand": {
+      "id": "nike",
+      "name": "Nike"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Nylon e couro sintético",
+      "tipoSola": "Borracha vulcanizada"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "NIK-CORT-VER-42-013",
+        "color": "Verde",
+        "size": "42",
+        "price": 437.09,
+        "inventory": 37,
+        "gtin": "7890000000013"
+      },
+      {
+        "sku": "NIK-CORT-VER-36-014",
+        "color": "Verde Musgo",
+        "size": "36",
+        "price": 399.3,
+        "inventory": 33,
+        "gtin": "7890000000014"
+      }
+    ]
+  },
+  {
+    "name": "Adidas Superstar",
+    "description": "O tênis com bico em shell toe de borracha que se tornou símbolo do hip-hop nos anos 80. Cabedal em couro resistente com as três listras clássicas, solado de borracha vulcanizada durável. Um ícone que atravessa gerações sem perder relevância.",
+    "brand": {
+      "id": "adidas",
+      "name": "Adidas"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro",
+      "tipoSola": "Borracha vulcanizada (shell toe)"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "ADI-SUPE-VER-43-015",
+        "color": "Verde Musgo",
+        "size": "43",
+        "price": 403.9,
+        "inventory": 5,
+        "gtin": "7890000000015"
+      },
+      {
+        "sku": "ADI-SUPE-BEG-37-016",
+        "color": "Bege",
+        "size": "37",
+        "price": 574.95,
+        "inventory": 31,
+        "gtin": "7890000000016"
+      }
+    ]
+  },
+  {
+    "name": "Adidas Stan Smith",
+    "description": "Criado originalmente para quadras de tênis, hoje é sinônimo de minimalismo streetwear. Cabedal em couro branco liso com perfurações em formato das três listras e o rosto de Stan Smith no calcanhar. Solado de borracha leve para uso casual o dia inteiro.",
+    "brand": {
+      "id": "adidas",
+      "name": "Adidas"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-3",
+      "calcados-4"
+    ],
+    "skus": [
+      {
+        "sku": "ADI-STAN-BEG-44-017",
+        "color": "Bege",
+        "size": "44",
+        "price": 618.96,
+        "inventory": 34,
+        "gtin": "7890000000017"
+      },
+      {
+        "sku": "ADI-STAN-MAR-38-018",
+        "color": "Marrom",
+        "size": "38",
+        "price": 610.76,
+        "inventory": 31,
+        "gtin": "7890000000018"
+      }
+    ]
+  },
+  {
+    "name": "Adidas Gazelle",
+    "description": "Silhueta retrô de treino lançada nos anos 60, com cabedal em camurça macia e as três listras em contraste. Entressola de borracha em tom gum remete ao design vintage original, hoje adotado como peça-chave do guarda-roupa casual.",
+    "brand": {
+      "id": "adidas",
+      "name": "Adidas"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Camurça",
+      "tipoSola": "Borracha gum"
+    },
+    "imageRefs": [
+      "calcados-4",
+      "calcados-5"
+    ],
+    "skus": [
+      {
+        "sku": "ADI-GAZE-MAR-36-019",
+        "color": "Marrom",
+        "size": "36",
+        "price": 370.86,
+        "inventory": 17,
+        "gtin": "7890000000019"
+      },
+      {
+        "sku": "ADI-GAZE-ROS-39-020",
+        "color": "Rosa",
+        "size": "39",
+        "price": 405.08,
+        "inventory": 28,
+        "gtin": "7890000000020"
+      }
+    ]
+  },
+  {
+    "name": "Adidas Samba OG",
+    "description": "Um dos modelos mais antigos da Adidas, originalmente feito para futebol em campos gelados. Cabedal em couro com sobreposição em camurça, sola de borracha em gum com padrão texturizado para tração. Voltou às ruas como um dos tênis mais desejados da última década.",
+    "brand": {
+      "id": "adidas",
+      "name": "Adidas"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro e camurça",
+      "tipoSola": "Borracha gum texturizada"
+    },
+    "imageRefs": [
+      "calcados-5",
+      "calcados-6"
+    ],
+    "skus": [
+      {
+        "sku": "ADI-SAMB-ROS-37-021",
+        "color": "Rosa",
+        "size": "37",
+        "price": 474.92,
+        "inventory": 15,
+        "gtin": "7890000000021"
+      },
+      {
+        "sku": "ADI-SAMB-AMA-40-022",
+        "color": "Amarelo",
+        "size": "40",
+        "price": 597.06,
+        "inventory": 16,
+        "gtin": "7890000000022"
+      }
+    ]
+  },
+  {
+    "name": "Adidas Ultraboost 22",
+    "description": "Tênis de performance com entressola em espuma Boost que devolve energia a cada passada. Cabedal Primeknit se adapta ao movimento do pé e oferece suporte flexível, enquanto o Torsion System estabiliza a passada em corridas de qualquer distância.",
+    "brand": {
+      "id": "adidas",
+      "name": "Adidas"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Primeknit",
+      "tipoSola": "Boost"
+    },
+    "imageRefs": [
+      "calcados-6",
+      "calcados-1"
+    ],
+    "skus": [
+      {
+        "sku": "ADI-ULTR-AMA-38-023",
+        "color": "Amarelo",
+        "size": "38",
+        "price": 622.33,
+        "inventory": 25,
+        "gtin": "7890000000023"
+      },
+      {
+        "sku": "ADI-ULTR-LAR-41-024",
+        "color": "Laranja",
+        "size": "41",
+        "price": 420.17,
+        "inventory": 21,
+        "gtin": "7890000000024"
+      }
+    ]
+  },
+  {
+    "name": "Adidas Campus 00s",
+    "description": "Reedição do clássico de skate dos anos 2000, com cabedal em camurça grossa e forma robusta que virou tendência entre a geração Z. Linguagem visual retrô com as três listras rebaixadas e solado de borracha gum.",
+    "brand": {
+      "id": "adidas",
+      "name": "Adidas"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Camurça",
+      "tipoSola": "Borracha gum"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "ADI-CAMP-LAR-39-025",
+        "color": "Laranja",
+        "size": "39",
+        "price": 532.22,
+        "inventory": 19,
+        "gtin": "7890000000025"
+      },
+      {
+        "sku": "ADI-CAMP-GRA-42-026",
+        "color": "Grafite",
+        "size": "42",
+        "price": 449.5,
+        "inventory": 35,
+        "gtin": "7890000000026"
+      }
+    ]
+  },
+  {
+    "name": "Adidas Forum Low",
+    "description": "Originalmente um tênis de basquete dos anos 80, hoje reinterpretado em versão cano baixo para o streetwear. Cabedal em couro premium com fecho de velcro decorativo no tornozelo e solado emborrachado resistente.",
+    "brand": {
+      "id": "adidas",
+      "name": "Adidas"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro premium",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "ADI-FORU-GRA-40-027",
+        "color": "Grafite",
+        "size": "40",
+        "price": 540.24,
+        "inventory": 17,
+        "gtin": "7890000000027"
+      },
+      {
+        "sku": "ADI-FORU-VIN-43-028",
+        "color": "Vinho",
+        "size": "43",
+        "price": 575.23,
+        "inventory": 26,
+        "gtin": "7890000000028"
+      }
+    ]
+  },
+  {
+    "name": "Puma Suede Classic",
+    "description": "Lançado em 1968, é o tênis de camurça mais icônico do streetwear e da cultura b-boy. Cabedal em camurça macia com a faixa lateral Puma Formstrip, solado de borracha vulcanizada leve e flexível para uso diário.",
+    "brand": {
+      "id": "puma",
+      "name": "Puma"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Camurça",
+      "tipoSola": "Borracha vulcanizada"
+    },
+    "imageRefs": [
+      "calcados-3",
+      "calcados-4"
+    ],
+    "skus": [
+      {
+        "sku": "PUM-SUED-VIN-41-029",
+        "color": "Vinho",
+        "size": "41",
+        "price": 347.88,
+        "inventory": 25,
+        "gtin": "7890000000029"
+      },
+      {
+        "sku": "PUM-SUED-NUD-44-030",
+        "color": "Nude",
+        "size": "44",
+        "price": 312.22,
+        "inventory": 8,
+        "gtin": "7890000000030"
+      }
+    ]
+  },
+  {
+    "name": "Puma RS-X",
+    "description": "Reinterpretação exagerada do sistema Running System dos anos 80, com entressola volumosa em espuma RS para amortecimento extra. Cabedal combina mesh, couro sintético e camurça em blocos de cor vibrantes, resumindo a estética chunky do streetwear atual.",
+    "brand": {
+      "id": "puma",
+      "name": "Puma"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Mesh, couro sintético e camurça",
+      "tipoSola": "Espuma RS"
+    },
+    "imageRefs": [
+      "calcados-4",
+      "calcados-5"
+    ],
+    "skus": [
+      {
+        "sku": "PUM-RSX-NUD-42-031",
+        "color": "Nude",
+        "size": "42",
+        "price": 390.08,
+        "inventory": 23,
+        "gtin": "7890000000031"
+      },
+      {
+        "sku": "PUM-RSX-PRA-36-032",
+        "color": "Prata",
+        "size": "36",
+        "price": 360.04,
+        "inventory": 15,
+        "gtin": "7890000000032"
+      }
+    ]
+  },
+  {
+    "name": "Puma Cali",
+    "description": "Silhueta inspirada nos tênis de quadra dos anos 80/90 da Califórnia, com cabedal em couro estruturado e entressola alta em plataforma. Visual retrô-esportivo que ficou popular entre influenciadoras de moda.",
+    "brand": {
+      "id": "puma",
+      "name": "Puma"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro",
+      "tipoSola": "Borracha em plataforma"
+    },
+    "imageRefs": [
+      "calcados-5",
+      "calcados-6"
+    ],
+    "skus": [
+      {
+        "sku": "PUM-CALI-PRA-43-033",
+        "color": "Prata",
+        "size": "43",
+        "price": 359.42,
+        "inventory": 7,
+        "gtin": "7890000000033"
+      },
+      {
+        "sku": "PUM-CALI-BOR-37-034",
+        "color": "Bordô",
+        "size": "37",
+        "price": 429.66,
+        "inventory": 12,
+        "gtin": "7890000000034"
+      }
+    ]
+  },
+  {
+    "name": "Puma Future Rider",
+    "description": "Combina referências retrô de corrida com amortecimento moderno em espuma SoftFoam+. Cabedal em mesh e camurça sintética com detalhes refletivos, indicado tanto para caminhada quanto para uso casual do dia a dia.",
+    "brand": {
+      "id": "puma",
+      "name": "Puma"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Mesh e camurça sintética",
+      "tipoSola": "SoftFoam+"
+    },
+    "imageRefs": [
+      "calcados-6",
+      "calcados-1"
+    ],
+    "skus": [
+      {
+        "sku": "PUM-FUTU-BOR-44-035",
+        "color": "Bordô",
+        "size": "44",
+        "price": 286.54,
+        "inventory": 35,
+        "gtin": "7890000000035"
+      },
+      {
+        "sku": "PUM-FUTU-CAR-38-036",
+        "color": "Caramelo",
+        "size": "38",
+        "price": 392.85,
+        "inventory": 27,
+        "gtin": "7890000000036"
+      }
+    ]
+  },
+  {
+    "name": "Puma Smash 3.0",
+    "description": "Tênis casual inspirado nas quadras de tênis clássicas, com cabedal em couro sintético durável e biqueira reforçada. Solado de borracha com padrão de tração testado para uso diário intenso, ótimo custo-benefício dentro da linha Puma.",
+    "brand": {
+      "id": "puma",
+      "name": "Puma"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Couro sintético",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "PUM-SMAS-CAR-36-037",
+        "color": "Caramelo",
+        "size": "36",
+        "price": 465.09,
+        "inventory": 13,
+        "gtin": "7890000000037"
+      },
+      {
+        "sku": "PUM-SMAS-OFF-39-038",
+        "color": "Off-White",
+        "size": "39",
+        "price": 365.7,
+        "inventory": 19,
+        "gtin": "7890000000038"
+      }
+    ]
+  },
+  {
+    "name": "Puma Palermo",
+    "description": "Resgate de um modelo de futsal indoor dos anos 90/2000, hoje um dos tênis mais desejados da Puma no streetwear. Cabedal em camurça premium com forma baixa e elegante, entressola fina que remete ao design original italiano.",
+    "brand": {
+      "id": "puma",
+      "name": "Puma"
+    },
+    "categories": [
+      {
+        "id": "tenis",
+        "name": "Tênis"
+      }
+    ],
+    "attributes": {
+      "material": "Camurça premium",
+      "tipoSola": "Borracha fina"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "PUM-PALE-OFF-37-039",
+        "color": "Off-White",
+        "size": "37",
+        "price": 398.95,
+        "inventory": 29,
+        "gtin": "7890000000039"
+      },
+      {
+        "sku": "PUM-PALE-PRE-40-040",
+        "color": "Preto",
+        "size": "40",
+        "price": 310.96,
+        "inventory": 11,
+        "gtin": "7890000000040"
+      }
+    ]
+  },
+  {
+    "name": "Democrata Social Oxford Smart Comfort",
+    "description": "Sapato social Oxford em couro legítimo com a tecnologia Smart Comfort da Democrata, que combina palmilha em espuma multidensidade e forração respirável. Fechamento em cadarço e biqueira reta, indicado para uso prolongado no ambiente corporativo.",
+    "brand": {
+      "id": "democrata",
+      "name": "Democrata"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro legítimo",
+      "tipoSola": "Couro com tecnologia Smart Comfort"
+    },
+    "imageRefs": [
+      "calcados-3",
+      "calcados-4"
+    ],
+    "skus": [
+      {
+        "sku": "DEM-SOCI-PRE-44-041",
+        "color": "Preto",
+        "size": "44",
+        "price": 300.25,
+        "inventory": 5,
+        "gtin": "7890000000041"
+      },
+      {
+        "sku": "DEM-SOCI-BRA-39-042",
+        "color": "Branco",
+        "size": "39",
+        "price": 256.81,
+        "inventory": 32,
+        "gtin": "7890000000042"
+      }
+    ]
+  },
+  {
+    "name": "Democrata Mocassim Dockside",
+    "description": "Mocassim náutico em couro legítimo com costura dockside na biqueira e sola de borracha antiderrapante. Modelagem confortável que dispensa meia-calça, versátil entre looks casuais e semi-formais.",
+    "brand": {
+      "id": "democrata",
+      "name": "Democrata"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro legítimo",
+      "tipoSola": "Borracha antiderrapante"
+    },
+    "imageRefs": [
+      "calcados-4",
+      "calcados-5"
+    ],
+    "skus": [
+      {
+        "sku": "DEM-MOCA-BRA-38-043",
+        "color": "Branco",
+        "size": "38",
+        "price": 319.62,
+        "inventory": 20,
+        "gtin": "7890000000043"
+      },
+      {
+        "sku": "DEM-MOCA-CIN-40-044",
+        "color": "Cinza",
+        "size": "40",
+        "price": 267.73,
+        "inventory": 23,
+        "gtin": "7890000000044"
+      }
+    ]
+  },
+  {
+    "name": "Democrata Social Derby Way",
+    "description": "Sapato Derby com fechamento aberto em couro macio e tecnologia Way, que oferece maior flexibilidade na sola sem perder a formalidade do modelo. Ideal para quem passa o dia em pé no trabalho.",
+    "brand": {
+      "id": "democrata",
+      "name": "Democrata"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro",
+      "tipoSola": "Borracha flexível Way"
+    },
+    "imageRefs": [
+      "calcados-5",
+      "calcados-6"
+    ],
+    "skus": [
+      {
+        "sku": "DEM-SOCI-CIN-39-045",
+        "color": "Cinza",
+        "size": "39",
+        "price": 253.01,
+        "inventory": 15,
+        "gtin": "7890000000045"
+      },
+      {
+        "sku": "DEM-SOCI-AZU-41-046",
+        "color": "Azul",
+        "size": "41",
+        "price": 329.65,
+        "inventory": 15,
+        "gtin": "7890000000046"
+      }
+    ]
+  },
+  {
+    "name": "Democrata Loafer Casual Couro",
+    "description": "Loafer em couro legítimo sem cadarço, com entrada facilitada e forração interna macia. Sola de borracha leve para uso casual, uma alternativa versátil ao sapato social tradicional.",
+    "brand": {
+      "id": "democrata",
+      "name": "Democrata"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro legítimo",
+      "tipoSola": "Borracha leve"
+    },
+    "imageRefs": [
+      "calcados-6",
+      "calcados-1"
+    ],
+    "skus": [
+      {
+        "sku": "DEM-LOAF-AZU-40-047",
+        "color": "Azul",
+        "size": "40",
+        "price": 297.31,
+        "inventory": 7,
+        "gtin": "7890000000047"
+      },
+      {
+        "sku": "DEM-LOAF-AZU-42-048",
+        "color": "Azul Marinho",
+        "size": "42",
+        "price": 333.84,
+        "inventory": 29,
+        "gtin": "7890000000048"
+      }
+    ]
+  },
+  {
+    "name": "Democrata Social Verniz Smart Comfort",
+    "description": "Sapato social em verniz de alto brilho para ocasiões formais, com a mesma tecnologia de conforto Smart Comfort da Democrata na palmilha. Acabamento impecável para cerimônias e eventos.",
+    "brand": {
+      "id": "democrata",
+      "name": "Democrata"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Verniz",
+      "tipoSola": "Couro com tecnologia Smart Comfort"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "DEM-SOCI-AZU-41-049",
+        "color": "Azul Marinho",
+        "size": "41",
+        "price": 278.3,
+        "inventory": 11,
+        "gtin": "7890000000049"
+      },
+      {
+        "sku": "DEM-SOCI-VER-43-050",
+        "color": "Vermelho",
+        "size": "43",
+        "price": 327.57,
+        "inventory": 15,
+        "gtin": "7890000000050"
+      }
+    ]
+  },
+  {
+    "name": "Democrata Casual Comfort Couro",
+    "description": "Sapato casual em couro com solado tratorado e palmilha em espuma de conforto, pensado para quem busca elegância sem abrir mão da praticidade no dia a dia.",
+    "brand": {
+      "id": "democrata",
+      "name": "Democrata"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro",
+      "tipoSola": "EVA"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "DEM-CASU-VER-42-051",
+        "color": "Vermelho",
+        "size": "42",
+        "price": 248.78,
+        "inventory": 21,
+        "gtin": "7890000000051"
+      },
+      {
+        "sku": "DEM-CASU-VER-44-052",
+        "color": "Verde",
+        "size": "44",
+        "price": 320.72,
+        "inventory": 18,
+        "gtin": "7890000000052"
+      }
+    ]
+  },
+  {
+    "name": "Democrata Slip-On Casual",
+    "description": "Modelo slip-on sem cadarços em couro legítimo, prático para o dia a dia urbano. Sola de borracha flexível e forração interna que evita atrito, ideal para longas caminhadas.",
+    "brand": {
+      "id": "democrata",
+      "name": "Democrata"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro legítimo",
+      "tipoSola": "Borracha flexível"
+    },
+    "imageRefs": [
+      "calcados-3",
+      "calcados-4"
+    ],
+    "skus": [
+      {
+        "sku": "DEM-SLIP-VER-43-053",
+        "color": "Verde",
+        "size": "43",
+        "price": 220.14,
+        "inventory": 20,
+        "gtin": "7890000000053"
+      },
+      {
+        "sku": "DEM-SLIP-VER-38-054",
+        "color": "Verde Musgo",
+        "size": "38",
+        "price": 234.08,
+        "inventory": 40,
+        "gtin": "7890000000054"
+      }
+    ]
+  },
+  {
+    "name": "Democrata Social Derby Premium",
+    "description": "Versão premium do Derby clássico, com couro de melhor curtimento e acabamento à mão nas costuras. Solado misto de couro com borracha para maior durabilidade sem perder a elegância tradicional.",
+    "brand": {
+      "id": "democrata",
+      "name": "Democrata"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro premium",
+      "tipoSola": "Couro com borracha"
+    },
+    "imageRefs": [
+      "calcados-4",
+      "calcados-5"
+    ],
+    "skus": [
+      {
+        "sku": "DEM-SOCI-VER-44-055",
+        "color": "Verde Musgo",
+        "size": "44",
+        "price": 256.1,
+        "inventory": 25,
+        "gtin": "7890000000055"
+      },
+      {
+        "sku": "DEM-SOCI-BEG-39-056",
+        "color": "Bege",
+        "size": "39",
+        "price": 297.08,
+        "inventory": 37,
+        "gtin": "7890000000056"
+      }
+    ]
+  },
+  {
+    "name": "Ferracini Social Derby Anatomic Gel",
+    "description": "Sapato Derby em couro legítimo com a tecnologia Anatomic Gel da Ferracini na palmilha, que absorve impacto e reduz a fadiga em jornadas longas. Fechamento em cadarço e acabamento clássico para o ambiente de trabalho.",
+    "brand": {
+      "id": "ferracini",
+      "name": "Ferracini"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro legítimo",
+      "tipoSola": "Gel anatômico"
+    },
+    "imageRefs": [
+      "calcados-5",
+      "calcados-6"
+    ],
+    "skus": [
+      {
+        "sku": "FER-SOCI-BEG-38-057",
+        "color": "Bege",
+        "size": "38",
+        "price": 350.95,
+        "inventory": 40,
+        "gtin": "7890000000057"
+      },
+      {
+        "sku": "FER-SOCI-MAR-40-058",
+        "color": "Marrom",
+        "size": "40",
+        "price": 285.94,
+        "inventory": 13,
+        "gtin": "7890000000058"
+      }
+    ]
+  },
+  {
+    "name": "Ferracini Mocassim Firenze",
+    "description": "Mocassim inspirado na tradição sapateira italiana, em couro nobre com acabamento brilhante. Costura manual aparente na biqueira e sola de couro com borracha, elegante para looks sociais e casuais.",
+    "brand": {
+      "id": "ferracini",
+      "name": "Ferracini"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro nobre",
+      "tipoSola": "Couro com borracha"
+    },
+    "imageRefs": [
+      "calcados-6",
+      "calcados-1"
+    ],
+    "skus": [
+      {
+        "sku": "FER-MOCA-MAR-39-059",
+        "color": "Marrom",
+        "size": "39",
+        "price": 319.36,
+        "inventory": 19,
+        "gtin": "7890000000059"
+      },
+      {
+        "sku": "FER-MOCA-ROS-41-060",
+        "color": "Rosa",
+        "size": "41",
+        "price": 360.07,
+        "inventory": 23,
+        "gtin": "7890000000060"
+      }
+    ]
+  },
+  {
+    "name": "Ferracini Social Oxford Couro",
+    "description": "Oxford clássico em couro legítimo com biqueira reta e cadarço, sola em couro costurada à mão. Modelo atemporal indicado para ternos e ocasiões formais.",
+    "brand": {
+      "id": "ferracini",
+      "name": "Ferracini"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro legítimo",
+      "tipoSola": "Couro costurado"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "FER-SOCI-ROS-40-061",
+        "color": "Rosa",
+        "size": "40",
+        "price": 382.16,
+        "inventory": 33,
+        "gtin": "7890000000061"
+      },
+      {
+        "sku": "FER-SOCI-AMA-42-062",
+        "color": "Amarelo",
+        "size": "42",
+        "price": 320.56,
+        "inventory": 37,
+        "gtin": "7890000000062"
+      }
+    ]
+  },
+  {
+    "name": "Ferracini Casual Comfort",
+    "description": "Sapato casual com solado EVA leve e forração em couro respirável, desenvolvido para quem busca conforto sem abrir mão do visual elegante no dia a dia.",
+    "brand": {
+      "id": "ferracini",
+      "name": "Ferracini"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro",
+      "tipoSola": "EVA leve"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "FER-CASU-AMA-41-063",
+        "color": "Amarelo",
+        "size": "41",
+        "price": 304.54,
+        "inventory": 26,
+        "gtin": "7890000000063"
+      },
+      {
+        "sku": "FER-CASU-LAR-43-064",
+        "color": "Laranja",
+        "size": "43",
+        "price": 374.41,
+        "inventory": 21,
+        "gtin": "7890000000064"
+      }
+    ]
+  },
+  {
+    "name": "Ferracini Loafer Anatomic Gel",
+    "description": "Loafer em couro legítimo com a palmilha em gel anatômico da Ferracini, que se molda ao pé e reduz a pressão plantar. Prático de calçar, ideal para o trabalho e compromissos casuais.",
+    "brand": {
+      "id": "ferracini",
+      "name": "Ferracini"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro legítimo",
+      "tipoSola": "Gel anatômico"
+    },
+    "imageRefs": [
+      "calcados-3",
+      "calcados-4"
+    ],
+    "skus": [
+      {
+        "sku": "FER-LOAF-LAR-42-065",
+        "color": "Laranja",
+        "size": "42",
+        "price": 297.27,
+        "inventory": 31,
+        "gtin": "7890000000065"
+      },
+      {
+        "sku": "FER-LOAF-GRA-44-066",
+        "color": "Grafite",
+        "size": "44",
+        "price": 375.81,
+        "inventory": 36,
+        "gtin": "7890000000066"
+      }
+    ]
+  },
+  {
+    "name": "Ferracini Social Verniz Premium",
+    "description": "Sapato social em verniz de alto brilho para cerimônias, com forração interna macia e solado costurado. Acabamento refinado que valoriza looks de gala.",
+    "brand": {
+      "id": "ferracini",
+      "name": "Ferracini"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Verniz",
+      "tipoSola": "Couro costurado"
+    },
+    "imageRefs": [
+      "calcados-4",
+      "calcados-5"
+    ],
+    "skus": [
+      {
+        "sku": "FER-SOCI-GRA-43-067",
+        "color": "Grafite",
+        "size": "43",
+        "price": 275.25,
+        "inventory": 13,
+        "gtin": "7890000000067"
+      },
+      {
+        "sku": "FER-SOCI-VIN-38-068",
+        "color": "Vinho",
+        "size": "38",
+        "price": 297.69,
+        "inventory": 6,
+        "gtin": "7890000000068"
+      }
+    ]
+  },
+  {
+    "name": "Ferracini Slip-On Casual Couro",
+    "description": "Slip-on em couro legítimo com elástico lateral discreto para entrada fácil. Solado de borracha flexível e leve, pensado para o uso urbano do dia a dia.",
+    "brand": {
+      "id": "ferracini",
+      "name": "Ferracini"
+    },
+    "categories": [
+      {
+        "id": "sapatos",
+        "name": "Sapatos"
+      }
+    ],
+    "attributes": {
+      "material": "Couro legítimo",
+      "tipoSola": "Borracha flexível"
+    },
+    "imageRefs": [
+      "calcados-5",
+      "calcados-6"
+    ],
+    "skus": [
+      {
+        "sku": "FER-SLIP-VIN-44-069",
+        "color": "Vinho",
+        "size": "44",
+        "price": 269.07,
+        "inventory": 28,
+        "gtin": "7890000000069"
+      },
+      {
+        "sku": "FER-SLIP-NUD-39-070",
+        "color": "Nude",
+        "size": "39",
+        "price": 364.16,
+        "inventory": 13,
+        "gtin": "7890000000070"
+      }
+    ]
+  },
+  {
+    "name": "Havaianas Top",
+    "description": "O chinelo mais vendido do Brasil, criado em 1962 e inspirado nas sandálias japonesas zori. Solado em borracha texturizada com pontos de massagem, tiras em cores vibrantes e a icônica bandeirinha na tira frontal.",
+    "brand": {
+      "id": "havaianas",
+      "name": "Havaianas"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "Borracha",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-6",
+      "calcados-1"
+    ],
+    "skus": [
+      {
+        "sku": "HAV-TOP-NUD-38-071",
+        "color": "Nude",
+        "size": "38",
+        "price": 51.34,
+        "inventory": 15,
+        "gtin": "7890000000071"
+      },
+      {
+        "sku": "HAV-TOP-PRA-42-072",
+        "color": "Prata",
+        "size": "42",
+        "price": 38.5,
+        "inventory": 26,
+        "gtin": "7890000000072"
+      }
+    ]
+  },
+  {
+    "name": "Havaianas Top Max",
+    "description": "Versão mais robusta da clássica Top, com solado mais grosso e resistente para uso intenso no dia a dia. Mantém as tiras em borracha macia e o mesmo conforto reconhecido da marca.",
+    "brand": {
+      "id": "havaianas",
+      "name": "Havaianas"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "Borracha",
+      "tipoSola": "Borracha reforçada"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "HAV-TOPM-PRA-39-073",
+        "color": "Prata",
+        "size": "39",
+        "price": 54.5,
+        "inventory": 38,
+        "gtin": "7890000000073"
+      },
+      {
+        "sku": "HAV-TOPM-BOR-33-074",
+        "color": "Bordô",
+        "size": "33",
+        "price": 63.91,
+        "inventory": 13,
+        "gtin": "7890000000074"
+      }
+    ]
+  },
+  {
+    "name": "Havaianas Slim",
+    "description": "Reinterpretação com tiras finas e delicadas da clássica Havaianas, indicada para quem busca um visual mais sofisticado sem perder o conforto do solado de borracha texturizado.",
+    "brand": {
+      "id": "havaianas",
+      "name": "Havaianas"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "Borracha",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "HAV-SLIM-BOR-40-075",
+        "color": "Bordô",
+        "size": "40",
+        "price": 55.84,
+        "inventory": 9,
+        "gtin": "7890000000075"
+      },
+      {
+        "sku": "HAV-SLIM-CAR-34-076",
+        "color": "Caramelo",
+        "size": "34",
+        "price": 60.82,
+        "inventory": 17,
+        "gtin": "7890000000076"
+      }
+    ]
+  },
+  {
+    "name": "Havaianas Brasil",
+    "description": "Estampa da bandeira brasileira nas tiras, um dos modelos mais icônicos e exportados da marca. Solado flexível em borracha com pontos de massagem e resistência à água.",
+    "brand": {
+      "id": "havaianas",
+      "name": "Havaianas"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "Borracha",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-3",
+      "calcados-4"
+    ],
+    "skus": [
+      {
+        "sku": "HAV-BRAS-CAR-41-077",
+        "color": "Caramelo",
+        "size": "41",
+        "price": 42.92,
+        "inventory": 29,
+        "gtin": "7890000000077"
+      },
+      {
+        "sku": "HAV-BRAS-OFF-35-078",
+        "color": "Off-White",
+        "size": "35",
+        "price": 35.88,
+        "inventory": 35,
+        "gtin": "7890000000078"
+      }
+    ]
+  },
+  {
+    "name": "Havaianas Brasil Mix",
+    "description": "Combina cores e texturas nas tiras para um visual mais descontraído, mantendo a base de borracha resistente e confortável característica da linha Brasil.",
+    "brand": {
+      "id": "havaianas",
+      "name": "Havaianas"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "Borracha",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-4",
+      "calcados-5"
+    ],
+    "skus": [
+      {
+        "sku": "HAV-BRAS-OFF-42-079",
+        "color": "Off-White",
+        "size": "42",
+        "price": 44.43,
+        "inventory": 14,
+        "gtin": "7890000000079"
+      },
+      {
+        "sku": "HAV-BRAS-PRE-36-080",
+        "color": "Preto",
+        "size": "36",
+        "price": 53.42,
+        "inventory": 22,
+        "gtin": "7890000000080"
+      }
+    ]
+  },
+  {
+    "name": "Havaianas You Metallic",
+    "description": "Linha premium com tiras em couro sintético metalizado, elevando o design do chinelo tradicional para ocasiões mais elaboradas sem perder o conforto Havaianas.",
+    "brand": {
+      "id": "havaianas",
+      "name": "Havaianas"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "Couro sintético metalizado",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-5",
+      "calcados-6"
+    ],
+    "skus": [
+      {
+        "sku": "HAV-YOUM-PRE-33-081",
+        "color": "Preto",
+        "size": "33",
+        "price": 51.46,
+        "inventory": 38,
+        "gtin": "7890000000081"
+      },
+      {
+        "sku": "HAV-YOUM-BRA-37-082",
+        "color": "Branco",
+        "size": "37",
+        "price": 47.73,
+        "inventory": 40,
+        "gtin": "7890000000082"
+      }
+    ]
+  },
+  {
+    "name": "Havaianas Freedom",
+    "description": "Sandália com tiras mais largas e cruzadas, oferecendo maior fixação no pé para quem caminha bastante. Solado em borracha com boa aderência em superfícies molhadas.",
+    "brand": {
+      "id": "havaianas",
+      "name": "Havaianas"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "Borracha",
+      "tipoSola": "Borracha antiderrapante"
+    },
+    "imageRefs": [
+      "calcados-6",
+      "calcados-1"
+    ],
+    "skus": [
+      {
+        "sku": "HAV-FREE-BRA-34-083",
+        "color": "Branco",
+        "size": "34",
+        "price": 34.6,
+        "inventory": 26,
+        "gtin": "7890000000083"
+      },
+      {
+        "sku": "HAV-FREE-CIN-38-084",
+        "color": "Cinza",
+        "size": "38",
+        "price": 54.76,
+        "inventory": 10,
+        "gtin": "7890000000084"
+      }
+    ]
+  },
+  {
+    "name": "Havaianas Casual",
+    "description": "Versão despojada com tiras em tecido e detalhes bordados, pensada para o uso urbano casual mantendo o solado de borracha característico da marca.",
+    "brand": {
+      "id": "havaianas",
+      "name": "Havaianas"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "Tecido e borracha",
+      "tipoSola": "Borracha"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "HAV-CASU-CIN-35-085",
+        "color": "Cinza",
+        "size": "35",
+        "price": 53.28,
+        "inventory": 32,
+        "gtin": "7890000000085"
+      },
+      {
+        "sku": "HAV-CASU-AZU-39-086",
+        "color": "Azul",
+        "size": "39",
+        "price": 52.49,
+        "inventory": 6,
+        "gtin": "7890000000086"
+      }
+    ]
+  },
+  {
+    "name": "Ipanema Class",
+    "description": "Sandália rasteira em PVC injetado com fivela metálica, elegante para o dia a dia sem abrir mão do conforto da tecnologia de injeção da Ipanema. Leve e resistente à água.",
+    "brand": {
+      "id": "ipanema",
+      "name": "Ipanema"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "PVC injetado",
+      "tipoSola": "PVC"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "IPA-CLAS-AZU-36-087",
+        "color": "Azul",
+        "size": "36",
+        "price": 118.73,
+        "inventory": 22,
+        "gtin": "7890000000087"
+      },
+      {
+        "sku": "IPA-CLAS-AZU-40-088",
+        "color": "Azul Marinho",
+        "size": "40",
+        "price": 91.02,
+        "inventory": 34,
+        "gtin": "7890000000088"
+      }
+    ]
+  },
+  {
+    "name": "Ipanema Wave",
+    "description": "Solado ondulado que absorve impacto a cada passo, com tiras em PVC flexível. Design pensado para longas caminhadas urbanas ou passeios de verão.",
+    "brand": {
+      "id": "ipanema",
+      "name": "Ipanema"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "PVC flexível",
+      "tipoSola": "PVC ondulado"
+    },
+    "imageRefs": [
+      "calcados-3",
+      "calcados-4"
+    ],
+    "skus": [
+      {
+        "sku": "IPA-WAVE-AZU-37-089",
+        "color": "Azul Marinho",
+        "size": "37",
+        "price": 110.35,
+        "inventory": 10,
+        "gtin": "7890000000089"
+      },
+      {
+        "sku": "IPA-WAVE-VER-41-090",
+        "color": "Vermelho",
+        "size": "41",
+        "price": 118.96,
+        "inventory": 16,
+        "gtin": "7890000000090"
+      }
+    ]
+  },
+  {
+    "name": "Ipanema Meu Sol",
+    "description": "Sandália com tiras finas cruzadas em PVC brilhante, ideal para looks de verão. Fragrância característica da Ipanema e solado macio antiderrapante.",
+    "brand": {
+      "id": "ipanema",
+      "name": "Ipanema"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "PVC brilhante",
+      "tipoSola": "PVC"
+    },
+    "imageRefs": [
+      "calcados-4",
+      "calcados-5"
+    ],
+    "skus": [
+      {
+        "sku": "IPA-MEUS-VER-38-091",
+        "color": "Vermelho",
+        "size": "38",
+        "price": 70.84,
+        "inventory": 12,
+        "gtin": "7890000000091"
+      },
+      {
+        "sku": "IPA-MEUS-VER-42-092",
+        "color": "Verde",
+        "size": "42",
+        "price": 68.83,
+        "inventory": 32,
+        "gtin": "7890000000092"
+      }
+    ]
+  },
+  {
+    "name": "Ipanema Fashion Sandal",
+    "description": "Modelo com tiras trançadas e acabamento fosco, misturando tendências de moda ao conforto tradicional das sandálias de PVC da marca.",
+    "brand": {
+      "id": "ipanema",
+      "name": "Ipanema"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "PVC trançado",
+      "tipoSola": "PVC"
+    },
+    "imageRefs": [
+      "calcados-5",
+      "calcados-6"
+    ],
+    "skus": [
+      {
+        "sku": "IPA-FASH-VER-39-093",
+        "color": "Verde",
+        "size": "39",
+        "price": 110.96,
+        "inventory": 25,
+        "gtin": "7890000000093"
+      },
+      {
+        "sku": "IPA-FASH-VER-33-094",
+        "color": "Verde Musgo",
+        "size": "33",
+        "price": 65.76,
+        "inventory": 19,
+        "gtin": "7890000000094"
+      }
+    ]
+  },
+  {
+    "name": "Ipanema Gisele Bündchen Class",
+    "description": "Linha assinada pela top model Gisele Bündchen, com design minimalista em tons neutros e tiras finas em PVC. Solado leve com tecnologia de amortecimento da Ipanema.",
+    "brand": {
+      "id": "ipanema",
+      "name": "Ipanema"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "PVC premium",
+      "tipoSola": "PVC"
+    },
+    "imageRefs": [
+      "calcados-6",
+      "calcados-1"
+    ],
+    "skus": [
+      {
+        "sku": "IPA-GISE-VER-40-095",
+        "color": "Verde Musgo",
+        "size": "40",
+        "price": 113.9,
+        "inventory": 20,
+        "gtin": "7890000000095"
+      },
+      {
+        "sku": "IPA-GISE-BEG-34-096",
+        "color": "Bege",
+        "size": "34",
+        "price": 75.99,
+        "inventory": 12,
+        "gtin": "7890000000096"
+      }
+    ]
+  },
+  {
+    "name": "Ipanema Anat Premium",
+    "description": "Sandália com palmilha anatômica em camada dupla de PVC, que se adapta ao formato do pé para maior conforto ao longo do dia. Acabamento premium com brilho sutil.",
+    "brand": {
+      "id": "ipanema",
+      "name": "Ipanema"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "PVC em camada dupla",
+      "tipoSola": "PVC anatômico"
+    },
+    "imageRefs": [
+      "calcados-1",
+      "calcados-2"
+    ],
+    "skus": [
+      {
+        "sku": "IPA-ANAT-BEG-41-097",
+        "color": "Bege",
+        "size": "41",
+        "price": 74.62,
+        "inventory": 26,
+        "gtin": "7890000000097"
+      },
+      {
+        "sku": "IPA-ANAT-MAR-35-098",
+        "color": "Marrom",
+        "size": "35",
+        "price": 99.9,
+        "inventory": 16,
+        "gtin": "7890000000098"
+      }
+    ]
+  },
+  {
+    "name": "Ipanema Colors",
+    "description": "Sandália colorida com tiras em tons contrastantes, solado flexível em PVC injetado e fragrância característica da Ipanema. Perfeita para compor looks de verão despojados.",
+    "brand": {
+      "id": "ipanema",
+      "name": "Ipanema"
+    },
+    "categories": [
+      {
+        "id": "sandalias",
+        "name": "Sandálias"
+      }
+    ],
+    "attributes": {
+      "material": "PVC injetado",
+      "tipoSola": "PVC"
+    },
+    "imageRefs": [
+      "calcados-2",
+      "calcados-3"
+    ],
+    "skus": [
+      {
+        "sku": "IPA-COLO-MAR-42-099",
+        "color": "Marrom",
+        "size": "42",
+        "price": 104.48,
+        "inventory": 9,
+        "gtin": "7890000000099"
+      },
+      {
+        "sku": "IPA-COLO-ROS-36-100",
+        "color": "Rosa",
+        "size": "36",
+        "price": 116.26,
+        "inventory": 8,
+        "gtin": "7890000000100"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camiseta Básica Algodão",
+    "description": "Camiseta de gola careca em algodão penteado 30.1, o carro-chefe da Hering desde sempre. Corte reto que veste bem em qualquer biotipo, costura reforçada nas mangas para maior durabilidade lavagem após lavagem.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão penteado 30.1",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-ROS-G-101",
+        "color": "Rosa",
+        "size": "G",
+        "price": 89.51,
+        "inventory": 10,
+        "gtin": "7890000000101"
+      },
+      {
+        "sku": "HER-CAMI-AMA-P-102",
+        "color": "Amarelo",
+        "size": "P",
+        "price": 60.24,
+        "inventory": 8,
+        "gtin": "7890000000102"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camiseta Gola V Slim",
+    "description": "Camiseta de gola V em algodão com elastano, corte slim que acompanha o corpo sem apertar. Tecido leve e macio, ideal para compor looks casuais do dia a dia.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão com elastano",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-AMA-GG-103",
+        "color": "Amarelo",
+        "size": "GG",
+        "price": 77.52,
+        "inventory": 20,
+        "gtin": "7890000000103"
+      },
+      {
+        "sku": "HER-CAMI-LAR-M-104",
+        "color": "Laranja",
+        "size": "M",
+        "price": 77.05,
+        "inventory": 6,
+        "gtin": "7890000000104"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camiseta Estampada Logo",
+    "description": "Camiseta em algodão com estampa do logo Hering serigrafada no peito, modelagem reta unissex. Tecido respirável que mantém o conforto em climas quentes.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-5",
+      "moda-6"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-LAR-P-105",
+        "color": "Laranja",
+        "size": "P",
+        "price": 52.35,
+        "inventory": 5,
+        "gtin": "7890000000105"
+      },
+      {
+        "sku": "HER-CAMI-GRA-G-106",
+        "color": "Grafite",
+        "size": "G",
+        "price": 54.71,
+        "inventory": 22,
+        "gtin": "7890000000106"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camiseta Manga Longa Térmica",
+    "description": "Camiseta básica de manga longa em algodão com toque térmico, ideal para dias mais frios usada sozinha ou como camada base sob jaquetas.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão térmico",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-6",
+      "moda-1"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-GRA-M-107",
+        "color": "Grafite",
+        "size": "M",
+        "price": 52.36,
+        "inventory": 40,
+        "gtin": "7890000000107"
+      },
+      {
+        "sku": "HER-CAMI-VIN-GG-108",
+        "color": "Vinho",
+        "size": "GG",
+        "price": 62.43,
+        "inventory": 10,
+        "gtin": "7890000000108"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camiseta Regular Fit Pima",
+    "description": "Camiseta em algodão pima de fibra longa, mais macio e resistente ao desbotamento que o algodão convencional. Corte regular fit com acabamento premium nas costuras.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão pima",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-1",
+      "moda-2"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-VIN-G-109",
+        "color": "Vinho",
+        "size": "G",
+        "price": 58.4,
+        "inventory": 16,
+        "gtin": "7890000000109"
+      },
+      {
+        "sku": "HER-CAMI-NUD-P-110",
+        "color": "Nude",
+        "size": "P",
+        "price": 68.59,
+        "inventory": 23,
+        "gtin": "7890000000110"
+      }
+    ]
+  },
+  {
+    "name": "Levi's Camiseta Logo Batwing",
+    "description": "Camiseta com o clássico logo Batwing estampado no peito, um dos símbolos mais reconhecíveis da Levi's desde os anos 80. Algodão 100% de gramatura média e corte regular.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-2",
+      "moda-3"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-CAMI-NUD-GG-111",
+        "color": "Nude",
+        "size": "GG",
+        "price": 148.91,
+        "inventory": 30,
+        "gtin": "7890000000111"
+      },
+      {
+        "sku": "LEV-CAMI-PRA-M-112",
+        "color": "Prata",
+        "size": "M",
+        "price": 129.75,
+        "inventory": 10,
+        "gtin": "7890000000112"
+      }
+    ]
+  },
+  {
+    "name": "Levi's Camiseta Housemark Graphic",
+    "description": "Camiseta gráfica com o brasão Housemark da Levi's, tecido 100% algodão penteado e modelagem unissex que remete ao streetwear denim da marca.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão penteado",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-CAMI-PRA-P-113",
+        "color": "Prata",
+        "size": "P",
+        "price": 114.05,
+        "inventory": 33,
+        "gtin": "7890000000113"
+      },
+      {
+        "sku": "LEV-CAMI-BOR-G-114",
+        "color": "Bordô",
+        "size": "G",
+        "price": 137.45,
+        "inventory": 22,
+        "gtin": "7890000000114"
+      }
+    ]
+  },
+  {
+    "name": "Levi's Camiseta Basic Crew Neck",
+    "description": "Camiseta básica de gola careca em algodão macio, peça coringa para compor com jeans Levi's de qualquer corte. Sem estampa, ideal para o dia a dia.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão",
+      "genero": "Feminino"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-CAMI-BOR-M-115",
+        "color": "Bordô",
+        "size": "M",
+        "price": 104.25,
+        "inventory": 31,
+        "gtin": "7890000000115"
+      },
+      {
+        "sku": "LEV-CAMI-CAR-GG-116",
+        "color": "Caramelo",
+        "size": "GG",
+        "price": 137.08,
+        "inventory": 7,
+        "gtin": "7890000000116"
+      }
+    ]
+  },
+  {
+    "name": "Levi's Camiseta Relaxed Fit Estampada",
+    "description": "Camiseta de caimento solto com estampa vintage inspirada nos arquivos históricos da marca, tecido encorpado em 100% algodão.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão encorpado",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-5",
+      "moda-6"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-CAMI-CAR-G-117",
+        "color": "Caramelo",
+        "size": "G",
+        "price": 105.55,
+        "inventory": 16,
+        "gtin": "7890000000117"
+      },
+      {
+        "sku": "LEV-CAMI-OFF-P-118",
+        "color": "Off-White",
+        "size": "P",
+        "price": 110.92,
+        "inventory": 14,
+        "gtin": "7890000000118"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Polo L.12.12 Clássica",
+    "description": "A polo original da Lacoste, criada em 1933 por René Lacoste em tecido petit piquet 100% algodão. Colarinho estruturado, punhos canelados e o icônico crocodilo bordado no peito — um ícone atemporal do vestuário esportivo francês.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Piquet de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-6",
+      "moda-1"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-POLO-OFF-GG-119",
+        "color": "Off-White",
+        "size": "GG",
+        "price": 413.63,
+        "inventory": 25,
+        "gtin": "7890000000119"
+      },
+      {
+        "sku": "LAC-POLO-PRE-M-120",
+        "color": "Preto",
+        "size": "M",
+        "price": 435.44,
+        "inventory": 24,
+        "gtin": "7890000000120"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Camiseta Basic Crew Neck",
+    "description": "Camiseta de gola careca em algodão jersey macio, com o pequeno crocodilo bordado no peito. Corte regular fit que combina elegância casual com conforto do dia a dia.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão jersey",
+      "genero": "Feminino"
+    },
+    "imageRefs": [
+      "moda-1",
+      "moda-2"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CAMI-PRE-P-121",
+        "color": "Preto",
+        "size": "P",
+        "price": 435.93,
+        "inventory": 23,
+        "gtin": "7890000000121"
+      },
+      {
+        "sku": "LAC-CAMI-BRA-G-122",
+        "color": "Branco",
+        "size": "G",
+        "price": 362.99,
+        "inventory": 28,
+        "gtin": "7890000000122"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Polo Slim Fit Piquet",
+    "description": "Versão slim fit da tradicional polo Lacoste em piquet de algodão, corte mais ajustado ao corpo mantendo a respirabilidade característica do tecido.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Piquet de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-2",
+      "moda-3"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-POLO-BRA-M-123",
+        "color": "Branco",
+        "size": "M",
+        "price": 401.17,
+        "inventory": 24,
+        "gtin": "7890000000123"
+      },
+      {
+        "sku": "LAC-POLO-CIN-GG-124",
+        "color": "Cinza",
+        "size": "GG",
+        "price": 427.42,
+        "inventory": 40,
+        "gtin": "7890000000124"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Camiseta Regular Fit Estampada",
+    "description": "Camiseta em algodão com estampa gráfica discreta do crocodilo, corte regular e tecido de alta gramatura para maior durabilidade.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão de alta gramatura",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CAMI-CIN-G-125",
+        "color": "Cinza",
+        "size": "G",
+        "price": 411.93,
+        "inventory": 29,
+        "gtin": "7890000000125"
+      },
+      {
+        "sku": "LAC-CAMI-AZU-P-126",
+        "color": "Azul",
+        "size": "P",
+        "price": 437.89,
+        "inventory": 16,
+        "gtin": "7890000000126"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Polo Manga Longa",
+    "description": "Polo de manga longa em piquet de algodão, ideal para meia-estação. Mantém o colarinho estruturado e o crocodilo bordado que definem a marca.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Piquet de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-POLO-AZU-GG-127",
+        "color": "Azul",
+        "size": "GG",
+        "price": 441.63,
+        "inventory": 22,
+        "gtin": "7890000000127"
+      },
+      {
+        "sku": "LAC-POLO-AZU-M-128",
+        "color": "Azul Marinho",
+        "size": "M",
+        "price": 437.61,
+        "inventory": 39,
+        "gtin": "7890000000128"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camiseta Bolso Signature",
+    "description": "Camiseta com bolso frontal e etiqueta bordada na barra, assinatura visual da Reserva. Algodão macio de alta gramatura e corte reto despretensioso.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão de alta gramatura",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-5",
+      "moda-6"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-AZU-P-129",
+        "color": "Azul Marinho",
+        "size": "P",
+        "price": 186,
+        "inventory": 36,
+        "gtin": "7890000000129"
+      },
+      {
+        "sku": "RES-CAMI-VER-G-130",
+        "color": "Vermelho",
+        "size": "G",
+        "price": 162.78,
+        "inventory": 6,
+        "gtin": "7890000000130"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camiseta Estampada Gráfica",
+    "description": "Camiseta com arte gráfica exclusiva estampada nas costas, unindo humor e design autoral que caracterizam a identidade da marca.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-6",
+      "moda-1"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-VER-M-131",
+        "color": "Vermelho",
+        "size": "M",
+        "price": 172.18,
+        "inventory": 7,
+        "gtin": "7890000000131"
+      },
+      {
+        "sku": "RES-CAMI-VER-GG-132",
+        "color": "Verde",
+        "size": "GG",
+        "price": 166.17,
+        "inventory": 6,
+        "gtin": "7890000000132"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camiseta Basic Algodão Pima",
+    "description": "Camiseta básica em algodão pima de toque macio, sem estampa, pensada como peça coringa de guarda-roupa para o dia a dia.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão pima",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-1",
+      "moda-2"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-VER-G-133",
+        "color": "Verde",
+        "size": "G",
+        "price": 187.19,
+        "inventory": 5,
+        "gtin": "7890000000133"
+      },
+      {
+        "sku": "RES-CAMI-VER-P-134",
+        "color": "Verde Musgo",
+        "size": "P",
+        "price": 180.86,
+        "inventory": 35,
+        "gtin": "7890000000134"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camiseta Gola V Comfort",
+    "description": "Camiseta de gola V em malha macia, modelagem levemente ajustada e confortável para uso casual em qualquer estação.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisetas",
+        "name": "Camisetas"
+      }
+    ],
+    "attributes": {
+      "material": "Malha de algodão",
+      "genero": "Feminino"
+    },
+    "imageRefs": [
+      "moda-2",
+      "moda-3"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-VER-GG-135",
+        "color": "Verde Musgo",
+        "size": "GG",
+        "price": 132.53,
+        "inventory": 20,
+        "gtin": "7890000000135"
+      },
+      {
+        "sku": "RES-CAMI-BEG-M-136",
+        "color": "Bege",
+        "size": "M",
+        "price": 136.2,
+        "inventory": 23,
+        "gtin": "7890000000136"
+      }
+    ]
+  },
+  {
+    "name": "Hering Calça Jogger Moletom",
+    "description": "Calça jogger em moletom flanelado com punho elástico no tornozelo, bolsos laterais funcionais e cordão de ajuste na cintura. Confortável para treino leve ou uso casual em casa.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Moletom flanelado",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CALC-BEG-38-137",
+        "color": "Bege",
+        "size": "38",
+        "price": 122.95,
+        "inventory": 17,
+        "gtin": "7890000000137"
+      },
+      {
+        "sku": "HER-CALC-MAR-42-138",
+        "color": "Marrom",
+        "size": "42",
+        "price": 132.54,
+        "inventory": 20,
+        "gtin": "7890000000138"
+      }
+    ]
+  },
+  {
+    "name": "Hering Calça Sarja Reta",
+    "description": "Calça de sarja de algodão com corte reto tradicional, cintura média e bolsos frontais e traseiros. Versátil para compor looks casuais ou semi-formais.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Sarja de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CALC-MAR-40-139",
+        "color": "Marrom",
+        "size": "40",
+        "price": 166.87,
+        "inventory": 33,
+        "gtin": "7890000000139"
+      },
+      {
+        "sku": "HER-CALC-ROS-44-140",
+        "color": "Rosa",
+        "size": "44",
+        "price": 175.42,
+        "inventory": 18,
+        "gtin": "7890000000140"
+      }
+    ]
+  },
+  {
+    "name": "Hering Calça Jeans Slim",
+    "description": "Calça jeans com elastano para maior mobilidade, corte slim que acompanha a perna sem apertar. Lavagem média que combina com praticamente qualquer produção.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Jeans com elastano",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-5",
+      "moda-6"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CALC-ROS-42-141",
+        "color": "Rosa",
+        "size": "42",
+        "price": 169.14,
+        "inventory": 24,
+        "gtin": "7890000000141"
+      },
+      {
+        "sku": "HER-CALC-AMA-38-142",
+        "color": "Amarelo",
+        "size": "38",
+        "price": 150.61,
+        "inventory": 9,
+        "gtin": "7890000000142"
+      }
+    ]
+  },
+  {
+    "name": "Hering Calça Alfaiataria Comfort",
+    "description": "Calça de alfaiataria com tecido leve e elastano para maior conforto no dia de trabalho, cintura ajustável e caimento reto elegante.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Poliéster e viscose",
+      "genero": "Feminino"
+    },
+    "imageRefs": [
+      "moda-6",
+      "moda-1"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CALC-AMA-42-143",
+        "color": "Amarelo",
+        "size": "42",
+        "price": 154.34,
+        "inventory": 23,
+        "gtin": "7890000000143"
+      },
+      {
+        "sku": "HER-CALC-LAR-38-144",
+        "color": "Laranja",
+        "size": "38",
+        "price": 125.59,
+        "inventory": 14,
+        "gtin": "7890000000144"
+      }
+    ]
+  },
+  {
+    "name": "Levi's 501 Original",
+    "description": "A calça jeans mais icônica do mundo, lançada em 1873 como a primeira jeans com rebites de cobre. Corte reto tradicional, cintura média e denim 100% algodão rígido que molda ao corpo com o uso.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Denim 100% algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-1",
+      "moda-2"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-501O-LAR-38-145",
+        "color": "Laranja",
+        "size": "38",
+        "price": 261.1,
+        "inventory": 11,
+        "gtin": "7890000000145"
+      },
+      {
+        "sku": "LEV-501O-GRA-42-146",
+        "color": "Grafite",
+        "size": "42",
+        "price": 297.92,
+        "inventory": 15,
+        "gtin": "7890000000146"
+      }
+    ]
+  },
+  {
+    "name": "Levi's 511 Slim",
+    "description": "Corte slim que acompanha a perna sem apertar, do joelho ao tornozelo. Denim com leve elastano para mobilidade, um dos cortes mais vendidos da marca atualmente.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Denim com elastano",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-2",
+      "moda-3"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-511S-GRA-40-147",
+        "color": "Grafite",
+        "size": "40",
+        "price": 323.65,
+        "inventory": 40,
+        "gtin": "7890000000147"
+      },
+      {
+        "sku": "LEV-511S-VIN-44-148",
+        "color": "Vinho",
+        "size": "44",
+        "price": 323.57,
+        "inventory": 25,
+        "gtin": "7890000000148"
+      }
+    ]
+  },
+  {
+    "name": "Levi's 505 Regular",
+    "description": "Corte reto regular, nem apertado nem largo, com caimento uniforme do quadril ao tornozelo. Denim resistente 100% algodão, um clássico versátil da Levi's.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Denim 100% algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-505R-VIN-42-149",
+        "color": "Vinho",
+        "size": "42",
+        "price": 368.92,
+        "inventory": 38,
+        "gtin": "7890000000149"
+      },
+      {
+        "sku": "LEV-505R-NUD-38-150",
+        "color": "Nude",
+        "size": "38",
+        "price": 371.79,
+        "inventory": 25,
+        "gtin": "7890000000150"
+      }
+    ]
+  },
+  {
+    "name": "Levi's 550 Relaxed",
+    "description": "Corte relaxed com mais espaço na coxa e na perna, cintura confortável. Ideal para quem prefere um caimento mais solto sem perder a identidade jeans da marca.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Denim 100% algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-550R-NUD-44-151",
+        "color": "Nude",
+        "size": "44",
+        "price": 348.97,
+        "inventory": 8,
+        "gtin": "7890000000151"
+      },
+      {
+        "sku": "LEV-550R-PRA-40-152",
+        "color": "Prata",
+        "size": "40",
+        "price": 278.1,
+        "inventory": 22,
+        "gtin": "7890000000152"
+      }
+    ]
+  },
+  {
+    "name": "Levi's Wedgie Straight",
+    "description": "Calça jeans feminina de cintura alta com corte reto e caimento vintage, desenhada para valorizar a silhueta. Denim rígido que se ajusta com o uso, inspirada nos jeans masculinos dos anos 80.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Denim rígido",
+      "genero": "Feminino"
+    },
+    "imageRefs": [
+      "moda-5",
+      "moda-6"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-WEDG-PRA-36-153",
+        "color": "Prata",
+        "size": "36",
+        "price": 371.67,
+        "inventory": 28,
+        "gtin": "7890000000153"
+      },
+      {
+        "sku": "LEV-WEDG-BOR-40-154",
+        "color": "Bordô",
+        "size": "40",
+        "price": 262.33,
+        "inventory": 11,
+        "gtin": "7890000000154"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Calça Chino Slim Fit",
+    "description": "Calça chino em sarja de algodão com elastano, corte slim fit moderno. Versátil entre o escritório e o fim de semana, com acabamento premium nos bolsos e costuras.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Sarja de algodão com elastano",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-6",
+      "moda-1"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CALC-BOR-40-155",
+        "color": "Bordô",
+        "size": "40",
+        "price": 555.06,
+        "inventory": 33,
+        "gtin": "7890000000155"
+      },
+      {
+        "sku": "LAC-CALC-CAR-44-156",
+        "color": "Caramelo",
+        "size": "44",
+        "price": 551.44,
+        "inventory": 33,
+        "gtin": "7890000000156"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Calça Sarja Regular Fit",
+    "description": "Calça de sarja de algodão com corte regular fit, cintura confortável e caimento reto clássico. Peça essencial para o guarda-roupa casual elegante.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Sarja de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-1",
+      "moda-2"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CALC-CAR-42-157",
+        "color": "Caramelo",
+        "size": "42",
+        "price": 507.13,
+        "inventory": 6,
+        "gtin": "7890000000157"
+      },
+      {
+        "sku": "LAC-CALC-OFF-38-158",
+        "color": "Off-White",
+        "size": "38",
+        "price": 480.41,
+        "inventory": 29,
+        "gtin": "7890000000158"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Calça Jogger Piquet",
+    "description": "Calça jogger em tecido piquet técnico, com punho elástico no tornozelo e cordão de ajuste. Une o conforto esportivo à estética refinada da Lacoste.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Piquet técnico",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-2",
+      "moda-3"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CALC-OFF-44-159",
+        "color": "Off-White",
+        "size": "44",
+        "price": 546.48,
+        "inventory": 21,
+        "gtin": "7890000000159"
+      },
+      {
+        "sku": "LAC-CALC-PRE-40-160",
+        "color": "Preto",
+        "size": "40",
+        "price": 536.32,
+        "inventory": 13,
+        "gtin": "7890000000160"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Calça Sarja Comfort",
+    "description": "Calça de sarja de algodão com elastano para maior conforto, corte reto e cintura ajustável. Versátil para compor looks casuais do dia a dia.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Sarja de algodão com elastano",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CALC-PRE-38-161",
+        "color": "Preto",
+        "size": "38",
+        "price": 246.14,
+        "inventory": 5,
+        "gtin": "7890000000161"
+      },
+      {
+        "sku": "RES-CALC-BRA-42-162",
+        "color": "Branco",
+        "size": "42",
+        "price": 298.94,
+        "inventory": 38,
+        "gtin": "7890000000162"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Calça Jeans Reta",
+    "description": "Calça jeans de corte reto tradicional em denim de qualidade, lavagem média e acabamento premium nas costuras.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Denim 100% algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CALC-BRA-40-163",
+        "color": "Branco",
+        "size": "40",
+        "price": 228.77,
+        "inventory": 19,
+        "gtin": "7890000000163"
+      },
+      {
+        "sku": "RES-CALC-CIN-44-164",
+        "color": "Cinza",
+        "size": "44",
+        "price": 249.91,
+        "inventory": 32,
+        "gtin": "7890000000164"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Calça Alfaiataria Slim",
+    "description": "Calça de alfaiataria com corte slim, tecido leve com boa queda, ideal para ocasiões que pedem um visual mais elaborado.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Poliéster e viscose",
+      "genero": "Feminino"
+    },
+    "imageRefs": [
+      "moda-5",
+      "moda-6"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CALC-CIN-40-165",
+        "color": "Cinza",
+        "size": "40",
+        "price": 299.28,
+        "inventory": 9,
+        "gtin": "7890000000165"
+      },
+      {
+        "sku": "RES-CALC-AZU-36-166",
+        "color": "Azul",
+        "size": "36",
+        "price": 238.58,
+        "inventory": 8,
+        "gtin": "7890000000166"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Calça Jogger Moletom",
+    "description": "Calça jogger em moletom macio com punho elástico e bolsos funcionais, confortável para o dia a dia despretensioso.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "calcas",
+        "name": "Calças"
+      }
+    ],
+    "attributes": {
+      "material": "Moletom macio",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-6",
+      "moda-1"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CALC-AZU-44-167",
+        "color": "Azul",
+        "size": "44",
+        "price": 280.81,
+        "inventory": 16,
+        "gtin": "7890000000167"
+      },
+      {
+        "sku": "RES-CALC-AZU-40-168",
+        "color": "Azul Marinho",
+        "size": "40",
+        "price": 265.71,
+        "inventory": 40,
+        "gtin": "7890000000168"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camisa Slim Manga Longa",
+    "description": "Camisa social de corte slim em tricoline de algodão, fácil de passar e com caimento ajustado ao corpo. Ideal para o ambiente de trabalho.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Tricoline de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-1",
+      "moda-2"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-AZU-38-169",
+        "color": "Azul Marinho",
+        "size": "38",
+        "price": 112.27,
+        "inventory": 29,
+        "gtin": "7890000000169"
+      },
+      {
+        "sku": "HER-CAMI-VER-42-170",
+        "color": "Vermelho",
+        "size": "42",
+        "price": 149.18,
+        "inventory": 39,
+        "gtin": "7890000000170"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camisa Flanela Xadrez",
+    "description": "Camisa de flanela xadrez macia e quentinha, perfeita para compor looks casuais de inverno com jeans.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Flanela de algodão",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-2",
+      "moda-3"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-VER-M-171",
+        "color": "Vermelho",
+        "size": "M",
+        "price": 132.3,
+        "inventory": 29,
+        "gtin": "7890000000171"
+      },
+      {
+        "sku": "HER-CAMI-VER-GG-172",
+        "color": "Verde",
+        "size": "GG",
+        "price": 129,
+        "inventory": 35,
+        "gtin": "7890000000172"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camisa Social Tricoline",
+    "description": "Camisa social clássica em tricoline de algodão, corte regular e acabamento tradicional para o dia a dia corporativo.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Tricoline de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-VER-42-173",
+        "color": "Verde",
+        "size": "42",
+        "price": 131.94,
+        "inventory": 24,
+        "gtin": "7890000000173"
+      },
+      {
+        "sku": "HER-CAMI-VER-38-174",
+        "color": "Verde Musgo",
+        "size": "38",
+        "price": 139.55,
+        "inventory": 23,
+        "gtin": "7890000000174"
+      }
+    ]
+  },
+  {
+    "name": "Hering Camisa Jeans Casual",
+    "description": "Camisa jeans leve com botões metálicos e dois bolsos frontais, coringa para compor looks despojados em qualquer estação.",
+    "brand": {
+      "id": "hering",
+      "name": "Hering"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Jeans leve",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "HER-CAMI-VER-GG-175",
+        "color": "Verde Musgo",
+        "size": "GG",
+        "price": 105.24,
+        "inventory": 15,
+        "gtin": "7890000000175"
+      },
+      {
+        "sku": "HER-CAMI-BEG-M-176",
+        "color": "Bege",
+        "size": "M",
+        "price": 149.71,
+        "inventory": 36,
+        "gtin": "7890000000176"
+      }
+    ]
+  },
+  {
+    "name": "Levi's Camisa Western",
+    "description": "Camisa com recortes western nos ombros e botões de pressão no lugar de botões tradicionais, um clássico do guarda-roupa country-americano da marca.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-5",
+      "moda-6"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-CAMI-BEG-P-177",
+        "color": "Bege",
+        "size": "P",
+        "price": 279.7,
+        "inventory": 28,
+        "gtin": "7890000000177"
+      },
+      {
+        "sku": "LEV-CAMI-MAR-G-178",
+        "color": "Marrom",
+        "size": "G",
+        "price": 211.76,
+        "inventory": 28,
+        "gtin": "7890000000178"
+      }
+    ]
+  },
+  {
+    "name": "Levi's Camisa Jeans Trucker Shirt",
+    "description": "Camisa jeans robusta inspirada na icônica jaqueta Trucker da Levi's, com dois bolsos com aba no peito e botões de metal.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Jeans robusto",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-6",
+      "moda-1"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-CAMI-MAR-M-179",
+        "color": "Marrom",
+        "size": "M",
+        "price": 221.56,
+        "inventory": 40,
+        "gtin": "7890000000179"
+      },
+      {
+        "sku": "LEV-CAMI-ROS-GG-180",
+        "color": "Rosa",
+        "size": "GG",
+        "price": 250.67,
+        "inventory": 12,
+        "gtin": "7890000000180"
+      }
+    ]
+  },
+  {
+    "name": "Levi's Camisa Xadrez Flanela",
+    "description": "Camisa de flanela xadrez em algodão macio, modelagem folgada tradicional da marca para uso casual em dias frios.",
+    "brand": {
+      "id": "levis",
+      "name": "Levi's"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Flanela de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-1",
+      "moda-2"
+    ],
+    "skus": [
+      {
+        "sku": "LEV-CAMI-ROS-G-181",
+        "color": "Rosa",
+        "size": "G",
+        "price": 275.89,
+        "inventory": 23,
+        "gtin": "7890000000181"
+      },
+      {
+        "sku": "LEV-CAMI-AMA-P-182",
+        "color": "Amarelo",
+        "size": "P",
+        "price": 213.9,
+        "inventory": 32,
+        "gtin": "7890000000182"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Camisa Regular Fit Poplin",
+    "description": "Camisa em popeline de algodão com corte regular, colarinho estruturado e o crocodilo bordado no peito. Versátil entre o social e o casual.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Popeline de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-2",
+      "moda-3"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CAMI-AMA-44-183",
+        "color": "Amarelo",
+        "size": "44",
+        "price": 384.37,
+        "inventory": 6,
+        "gtin": "7890000000183"
+      },
+      {
+        "sku": "LAC-CAMI-LAR-40-184",
+        "color": "Laranja",
+        "size": "40",
+        "price": 419.47,
+        "inventory": 29,
+        "gtin": "7890000000184"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Camisa Social Slim Fit",
+    "description": "Camisa social de corte slim em tecido de algodão premium, ideal para looks formais que pedem precisão no caimento.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Algodão premium",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CAMI-LAR-38-185",
+        "color": "Laranja",
+        "size": "38",
+        "price": 469.01,
+        "inventory": 9,
+        "gtin": "7890000000185"
+      },
+      {
+        "sku": "LAC-CAMI-GRA-42-186",
+        "color": "Grafite",
+        "size": "42",
+        "price": 443.56,
+        "inventory": 26,
+        "gtin": "7890000000186"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Camisa Oxford Manga Longa",
+    "description": "Camisa em tecido oxford de algodão, textura ligeiramente encorpada e resistente, um clássico atemporal do vestuário masculino.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Oxford de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CAMI-GRA-40-187",
+        "color": "Grafite",
+        "size": "40",
+        "price": 440.23,
+        "inventory": 10,
+        "gtin": "7890000000187"
+      },
+      {
+        "sku": "LAC-CAMI-VIN-44-188",
+        "color": "Vinho",
+        "size": "44",
+        "price": 434.3,
+        "inventory": 18,
+        "gtin": "7890000000188"
+      }
+    ]
+  },
+  {
+    "name": "Lacoste Camisa Linho Regular Fit",
+    "description": "Camisa em linho leve e respirável, corte regular ideal para dias quentes sem abrir mão da elegância característica da marca.",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Linho",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-5",
+      "moda-6"
+    ],
+    "skus": [
+      {
+        "sku": "LAC-CAMI-VIN-G-189",
+        "color": "Vinho",
+        "size": "G",
+        "price": 396.88,
+        "inventory": 28,
+        "gtin": "7890000000189"
+      },
+      {
+        "sku": "LAC-CAMI-NUD-P-190",
+        "color": "Nude",
+        "size": "P",
+        "price": 412.53,
+        "inventory": 10,
+        "gtin": "7890000000190"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camisa Flanela Xadrez",
+    "description": "Camisa de flanela xadrez com toque macio e forração quentinha, ideal para compor looks casuais de inverno com uma jaqueta por cima.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Flanela de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-6",
+      "moda-1"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-NUD-GG-191",
+        "color": "Nude",
+        "size": "GG",
+        "price": 187.45,
+        "inventory": 35,
+        "gtin": "7890000000191"
+      },
+      {
+        "sku": "RES-CAMI-PRA-M-192",
+        "color": "Prata",
+        "size": "M",
+        "price": 215.67,
+        "inventory": 35,
+        "gtin": "7890000000192"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camisa Linho Comfort",
+    "description": "Camisa em linho leve com caimento solto, perfeita para dias quentes e viagens de verão.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Linho",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-1",
+      "moda-2"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-PRA-P-193",
+        "color": "Prata",
+        "size": "P",
+        "price": 241.19,
+        "inventory": 38,
+        "gtin": "7890000000193"
+      },
+      {
+        "sku": "RES-CAMI-BOR-G-194",
+        "color": "Bordô",
+        "size": "G",
+        "price": 193.47,
+        "inventory": 39,
+        "gtin": "7890000000194"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camisa Social Slim Tricoline",
+    "description": "Camisa social em tricoline de algodão com corte slim, fácil de passar e ideal para o ambiente de trabalho.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Tricoline de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-2",
+      "moda-3"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-BOR-40-195",
+        "color": "Bordô",
+        "size": "40",
+        "price": 193.31,
+        "inventory": 21,
+        "gtin": "7890000000195"
+      },
+      {
+        "sku": "RES-CAMI-CAR-44-196",
+        "color": "Caramelo",
+        "size": "44",
+        "price": 201.02,
+        "inventory": 26,
+        "gtin": "7890000000196"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camisa Jeans Western",
+    "description": "Camisa jeans com recortes western e botões de pressão, estilo despojado com a identidade autoral da Reserva.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Jeans leve",
+      "genero": "Unissex"
+    },
+    "imageRefs": [
+      "moda-3",
+      "moda-4"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-CAR-G-197",
+        "color": "Caramelo",
+        "size": "G",
+        "price": 186.77,
+        "inventory": 8,
+        "gtin": "7890000000197"
+      },
+      {
+        "sku": "RES-CAMI-OFF-P-198",
+        "color": "Off-White",
+        "size": "P",
+        "price": 210.93,
+        "inventory": 11,
+        "gtin": "7890000000198"
+      }
+    ]
+  },
+  {
+    "name": "Reserva Camisa Manga Curta Casual",
+    "description": "Camisa de manga curta em tecido leve, ideal para o verão em looks despojados no dia a dia.",
+    "brand": {
+      "id": "reserva",
+      "name": "Reserva"
+    },
+    "categories": [
+      {
+        "id": "camisas",
+        "name": "Camisas"
+      }
+    ],
+    "attributes": {
+      "material": "Popeline de algodão",
+      "genero": "Masculino"
+    },
+    "imageRefs": [
+      "moda-4",
+      "moda-5"
+    ],
+    "skus": [
+      {
+        "sku": "RES-CAMI-OFF-GG-199",
+        "color": "Off-White",
+        "size": "GG",
+        "price": 246.83,
+        "inventory": 28,
+        "gtin": "7890000000199"
+      },
+      {
+        "sku": "RES-CAMI-PRE-M-200",
+        "color": "Preto",
+        "size": "M",
+        "price": 227.67,
+        "inventory": 7,
+        "gtin": "7890000000200"
+      }
+    ]
+  }
+]

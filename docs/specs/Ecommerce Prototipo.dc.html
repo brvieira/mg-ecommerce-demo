@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:'Work Sans',sans-serif;-webkit-font-smoothing:antialiased;}
+    a{color:oklch(58% 0.11 55);text-decoration:none;}
+    a:hover{color:oklch(50% 0.11 55);}
+    input,select,textarea,button{font-family:inherit;}
+    ::-webkit-scrollbar{width:10px;height:10px;}
+    ::-webkit-scrollbar-thumb{background:oklch(88% 0.01 85);border-radius:6px;}
+  </style>
+</helmet>
+<div style="min-height:100vh;background:oklch(97% 0.012 85);color:oklch(18% 0.01 85);">
+
+  <header style="position:sticky;top:0;z-index:20;background:oklch(99% 0.005 85 / 0.92);backdrop-filter:blur(10px);border-bottom:1px solid oklch(90% 0.01 85);">
+    <div style="max-width:1360px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;gap:28px;">
+      <div onClick="{{ goCatalog }}" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:600;letter-spacing:0.04em;cursor:pointer;white-space:nowrap;">ARBOR STUDIO</div>
+      <div style="flex:1;max-width:520px;position:relative;">
+        <span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:oklch(55% 0.015 85);font-size:15px;">⌕</span>
+        <input type="text" placeholder="Buscar por produto, categoria ou marca..." value="{{ search }}" onChange="{{ handleSearchChange }}" style="width:100%;padding:11px 16px 11px 40px;border-radius:999px;border:1px solid oklch(88% 0.01 85);background:oklch(98% 0.005 85);font-size:14px;color:oklch(18% 0.01 85);outline:none;" />
+      </div>
+      <nav style="display:flex;align-items:center;gap:10px;margin-left:auto;">
+        <button onClick="{{ goCatalog }}" style="background:none;border:none;font-size:14px;color:{{ catalogNavColor }};cursor:pointer;padding:8px 6px;font-weight:500;">Catálogo</button>
+        <button onClick="{{ openCreate }}" style="background:oklch(18% 0.01 85);color:oklch(98% 0.005 85);border:none;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;">+ Novo Produto</button>
+      </nav>
+    </div>
+  </header>
+
+  <sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width:1360px;margin:16px auto 0;padding:0 32px;">
+      <div style="background:oklch(94% 0.06 145);border:1px solid oklch(80% 0.1 145);color:oklch(28% 0.08 145);padding:12px 18px;border-radius:10px;font-size:14px;">{{ toast }}</div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isCatalog }}" hint-placeholder-val="{{ true }}">
+    <div style="max-width:1360px;margin:0 auto;padding:36px 32px 80px;display:grid;grid-template-columns:240px 1fr;gap:36px;">
+      <aside style="display:flex;flex-direction:column;gap:28px;">
+        <div>
+          <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:oklch(50% 0.015 85);margin-bottom:12px;">Categoria</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <sc-for list="{{ categoryChips }}" as="chip" hint-placeholder-count="6">
+              <button onClick="{{ chip.toggle }}" style="border:1px solid {{ chip.borderColor }};background:{{ chip.bg }};color:{{ chip.fg }};padding:7px 14px;border-radius:999px;font-size:13px;cursor:pointer;">{{ chip.name }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:oklch(50% 0.015 85);margin-bottom:12px;">Faixa de preço (R$)</div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <input type="number" value="{{ minPrice }}" onChange="{{ handleMinPriceChange }}" style="width:90px;padding:8px 10px;border-radius:8px;border:1px solid oklch(88% 0.01 85);font-size:13px;background:oklch(99% 0.005 85);" />
+            <span style="color:oklch(55% 0.015 85);">–</span>
+            <input type="number" value="{{ maxPrice }}" onChange="{{ handleMaxPriceChange }}" style="width:90px;padding:8px 10px;border-radius:8px;border:1px solid oklch(88% 0.01 85);font-size:13px;background:oklch(99% 0.005 85);" />
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:oklch(50% 0.015 85);margin-bottom:12px;">Disponibilidade</div>
+          <button onClick="{{ toggleInStock }}" style="display:flex;align-items:center;gap:10px;background:none;border:none;cursor:pointer;padding:0;">
+            <span style="width:38px;height:22px;border-radius:999px;background:{{ stockToggleTrack }};position:relative;display:inline-block;transition:background .15s;">
+              <span style="position:absolute;top:2px;left:{{ stockToggleThumbLeft }};width:18px;height:18px;border-radius:999px;background:white;box-shadow:0 1px 2px rgba(0,0,0,0.25);transition:left .15s;"></span>
+            </span>
+            <span style="font-size:13px;color:oklch(30% 0.01 85);">Somente em estoque</span>
+          </button>
+        </div>
+      </aside>
+
+      <div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:22px;">
+          <h1 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:600;margin:0;">Catálogo</h1>
+          <div style="font-size:13px;color:oklch(50% 0.015 85);">{{ resultsLabel }}</div>
+        </div>
+        <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px;">
+            <sc-for list="{{ filteredProducts }}" as="p" hint-placeholder-count="8">
+              <div onClick="{{ p.openDetail }}" style="background:oklch(99% 0.005 85);border:1px solid oklch(91% 0.01 85);border-radius:14px;overflow:hidden;cursor:pointer;transition:box-shadow .15s,transform .15s;">
+                <div style="aspect-ratio:1;background:repeating-linear-gradient(135deg,oklch(93% 0.015 85) 0 14px,oklch(95% 0.012 85) 14px 28px);display:flex;align-items:center;justify-content:center;position:relative;">
+                  <span style="font-family:monospace;font-size:11px;color:oklch(55% 0.02 85);background:oklch(99% 0.005 85 / 0.85);padding:4px 8px;border-radius:4px;">{{ p.sku }}.jpg</span>
+                </div>
+                <div style="padding:16px;">
+                  <div style="font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:oklch(55% 0.02 85);margin-bottom:6px;">{{ p.category }} · {{ p.brand }}</div>
+                  <div style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-bottom:8px;line-height:1.3;">{{ p.name }}</div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <span style="font-size:15px;font-weight:600;">{{ p.priceLabel }}</span>
+                  </div>
+                  <div style="margin-top:8px;font-size:12px;color:{{ p.stockColor }};">{{ p.stockLabel }}</div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+        <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}" invert="true">
+          <div style="padding:80px 0;text-align:center;color:oklch(55% 0.015 85);font-size:15px;">Nenhum produto encontrado com os filtros atuais.</div>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isDetail }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width:1200px;margin:0 auto;padding:36px 32px 90px;">
+      <div style="font-size:13px;color:oklch(50% 0.015 85);margin-bottom:24px;"><a href="#" onClick="{{ goCatalogPrevent }}">Catálogo</a> / {{ selectedProduct.category }}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:52px;">
+        <div style="aspect-ratio:1;background:repeating-linear-gradient(135deg,oklch(93% 0.015 85) 0 18px,oklch(95% 0.012 85) 18px 36px);border-radius:16px;display:flex;align-items:center;justify-content:center;">
+          <span style="font-family:monospace;font-size:13px;color:oklch(55% 0.02 85);background:oklch(99% 0.005 85 / 0.85);padding:6px 12px;border-radius:6px;">{{ selectedProduct.sku }}_full.jpg</span>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:oklch(55% 0.02 85);margin-bottom:10px;">{{ selectedProduct.category }} · {{ selectedProduct.brand }}</div>
+          <h1 style="font-family:'Playfair Display',serif;font-size:34px;font-weight:600;margin:0 0 14px;line-height:1.2;">{{ selectedProduct.name }}</h1>
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:22px;">
+            <span style="font-size:26px;font-weight:600;">{{ selectedProduct.priceLabel }}</span>
+          </div>
+          <p style="font-size:15px;line-height:1.7;color:oklch(32% 0.01 85);margin:0 0 24px;">{{ selectedProduct.description }}</p>
+          <div style="display:flex;gap:24px;font-size:13px;color:oklch(45% 0.015 85);margin-bottom:28px;border-top:1px solid oklch(91% 0.01 85);border-bottom:1px solid oklch(91% 0.01 85);padding:16px 0;">
+            <div><span style="color:oklch(30% 0.01 85);font-weight:500;">SKU</span> {{ selectedProduct.sku }}</div>
+            <div style="color:{{ selectedProduct.stockColor }};font-weight:500;">{{ selectedProduct.stockLabel }}</div>
+          </div>
+          <div style="display:flex;gap:12px;">
+            <button onClick="{{ openEditCurrent }}" style="background:oklch(18% 0.01 85);color:oklch(98% 0.005 85);border:none;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;">Editar produto</button>
+            <button onClick="{{ goCatalog }}" style="background:none;color:oklch(30% 0.01 85);border:1px solid oklch(85% 0.01 85);padding:13px 22px;border-radius:8px;font-size:14px;cursor:pointer;">Voltar ao catálogo</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:72px;">
+        <h2 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:600;margin:0 0 20px;">Produtos semelhantes</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px;">
+          <sc-for list="{{ similarProducts }}" as="s" hint-placeholder-count="4">
+            <div onClick="{{ s.openDetail }}" style="background:oklch(99% 0.005 85);border:1px solid oklch(91% 0.01 85);border-radius:14px;overflow:hidden;cursor:pointer;">
+              <div style="aspect-ratio:1;background:repeating-linear-gradient(135deg,oklch(93% 0.015 85) 0 12px,oklch(95% 0.012 85) 12px 24px);display:flex;align-items:center;justify-content:center;">
+                <span style="font-family:monospace;font-size:10px;color:oklch(55% 0.02 85);background:oklch(99% 0.005 85 / 0.85);padding:3px 6px;border-radius:4px;">{{ s.sku }}.jpg</span>
+              </div>
+              <div style="padding:14px;">
+                <div style="font-size:10px;letter-spacing:0.05em;text-transform:uppercase;color:oklch(55% 0.02 85);margin-bottom:5px;">{{ s.category }}</div>
+                <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:600;margin-bottom:6px;">{{ s.name }}</div>
+                <div style="font-size:14px;font-weight:600;">{{ s.priceLabel }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isForm }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width:760px;margin:0 auto;padding:36px 32px 90px;">
+      <div style="font-size:13px;color:oklch(50% 0.015 85);margin-bottom:20px;"><a href="#" onClick="{{ goCatalogPrevent }}">Catálogo</a> / {{ formTitle }}</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:600;margin:0 0 28px;">{{ formTitle }}</h1>
+      <div style="background:oklch(99% 0.005 85);border:1px solid oklch(91% 0.01 85);border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:20px;">
+        <div>
+          <label style="font-size:13px;font-weight:500;color:oklch(30% 0.01 85);display:block;margin-bottom:7px;">Nome do produto</label>
+          <input type="text" name="name" value="{{ form.name }}" onChange="{{ handleFieldChange }}" placeholder="Ex: Poltrona Konvex" style="width:100%;padding:11px 14px;border-radius:8px;border:1px solid {{ nameBorder }};background:oklch(98% 0.005 85);font-size:14px;" />
+          <sc-if value="{{ formErrors.name }}" hint-placeholder-val="{{ false }}"><div style="color:oklch(55% 0.15 25);font-size:12px;margin-top:5px;">{{ formErrors.name }}</div></sc-if>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div>
+            <label style="font-size:13px;font-weight:500;color:oklch(30% 0.01 85);display:block;margin-bottom:7px;">Categoria</label>
+            <select name="category" value="{{ form.category }}" onChange="{{ handleFieldChange }}" style="width:100%;padding:11px 14px;border-radius:8px;border:1px solid oklch(88% 0.01 85);background:oklch(98% 0.005 85);font-size:14px;">
+              <sc-for list="{{ categoryOptions }}" as="co" hint-placeholder-count="6">
+                <option value="{{ co }}">{{ co }}</option>
+              </sc-for>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:500;color:oklch(30% 0.01 85);display:block;margin-bottom:7px;">Marca</label>
+            <input type="text" name="brand" value="{{ form.brand }}" onChange="{{ handleFieldChange }}" placeholder="Ex: Nordik" style="width:100%;padding:11px 14px;border-radius:8px;border:1px solid {{ brandBorder }};background:oklch(98% 0.005 85);font-size:14px;" />
+            <sc-if value="{{ formErrors.brand }}" hint-placeholder-val="{{ false }}"><div style="color:oklch(55% 0.15 25);font-size:12px;margin-top:5px;">{{ formErrors.brand }}</div></sc-if>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div>
+            <label style="font-size:13px;font-weight:500;color:oklch(30% 0.01 85);display:block;margin-bottom:7px;">Preço (R$)</label>
+            <input type="number" name="price" value="{{ form.price }}" onChange="{{ handleFieldChange }}" placeholder="0" style="width:100%;padding:11px 14px;border-radius:8px;border:1px solid {{ priceBorder }};background:oklch(98% 0.005 85);font-size:14px;" />
+            <sc-if value="{{ formErrors.price }}" hint-placeholder-val="{{ false }}"><div style="color:oklch(55% 0.15 25);font-size:12px;margin-top:5px;">{{ formErrors.price }}</div></sc-if>
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:500;color:oklch(30% 0.01 85);display:block;margin-bottom:7px;">Estoque</label>
+            <input type="number" name="stock" value="{{ form.stock }}" onChange="{{ handleFieldChange }}" placeholder="0" style="width:100%;padding:11px 14px;border-radius:8px;border:1px solid {{ stockBorder }};background:oklch(98% 0.005 85);font-size:14px;" />
+            <sc-if value="{{ formErrors.stock }}" hint-placeholder-val="{{ false }}"><div style="color:oklch(55% 0.15 25);font-size:12px;margin-top:5px;">{{ formErrors.stock }}</div></sc-if>
+          </div>
+        </div>
+        <div>
+          <label style="font-size:13px;font-weight:500;color:oklch(30% 0.01 85);display:block;margin-bottom:7px;">SKU</label>
+          <input type="text" name="sku" value="{{ form.sku }}" onChange="{{ handleFieldChange }}" placeholder="Gerado automaticamente" style="width:100%;padding:11px 14px;border-radius:8px;border:1px solid oklch(88% 0.01 85);background:oklch(96% 0.005 85);font-size:14px;color:oklch(45% 0.01 85);" />
+        </div>
+        <div>
+          <label style="font-size:13px;font-weight:500;color:oklch(30% 0.01 85);display:block;margin-bottom:7px;">Descrição</label>
+          <textarea name="description" value="{{ form.description }}" onChange="{{ handleFieldChange }}" rows="4" placeholder="Descreva o produto..." style="width:100%;padding:11px 14px;border-radius:8px;border:1px solid oklch(88% 0.01 85);background:oklch(98% 0.005 85);font-size:14px;resize:vertical;font-family:inherit;"></textarea>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:8px;">
+          <button onClick="{{ submitForm }}" style="background:oklch(18% 0.01 85);color:oklch(98% 0.005 85);border:none;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;">{{ submitLabel }}</button>
+          <button onClick="{{ goCatalog }}" style="background:none;color:oklch(30% 0.01 85);border:1px solid oklch(85% 0.01 85);padding:13px 22px;border-radius:8px;font-size:14px;cursor:pointer;">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <div style="position:fixed;bottom:20px;right:20px;z-index:50;font-family:monospace;">
+    <sc-if value="{{ debugOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="width:420px;max-height:55vh;display:flex;flex-direction:column;background:oklch(16% 0.01 85);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.35);overflow:hidden;margin-bottom:10px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid oklch(28% 0.01 85);">
+          <span style="color:oklch(85% 0.01 85);font-size:12px;">debug · {{ debugPageLabel }}</span>
+          <button onClick="{{ toggleDebug }}" style="background:none;border:none;color:oklch(70% 0.01 85);cursor:pointer;font-size:13px;">✕</button>
+        </div>
+        <pre style="margin:0;padding:14px;overflow:auto;color:oklch(88% 0.03 145);font-size:11.5px;line-height:1.6;">{{ debugJson }}</pre>
+      </div>
+    </sc-if>
+    <button onClick="{{ toggleDebug }}" style="background:oklch(16% 0.01 85);color:oklch(90% 0.01 85);border:none;padding:11px 16px;border-radius:999px;font-size:12px;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,0.25);">{{ debugToggleLabel }}</button>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const CATEGORIES = ['Cadeiras','Mesas','Iluminação','Estofados','Decoração','Têxteis'];
+
+const RAW_PRODUCTS = [
+  {id:1,name:'Poltrona Konvex',category:'Cadeiras',brand:'Nordik',price:3480,rating:4.6,stock:8,sku:'CDR-001',description:'Poltrona de linhas escultóricas em madeira maciça e estofado em linho premium, feita para compor ambientes de assinatura.'},
+  {id:2,name:'Mesa de Jantar Lyra',category:'Mesas',brand:'Studio 406',price:7200,rating:4.8,stock:3,sku:'MSA-002',description:'Mesa de jantar em carvalho europeu com base escultural em três apoios, acabamento acetinado e tampo de 240cm.'},
+  {id:3,name:'Luminária Pendente Halo',category:'Iluminação',brand:'Lumen Co.',price:1150,rating:4.3,stock:15,sku:'ILU-003',description:'Pendente circular em latão escovado com difusor opalino, ideal para mesas de jantar e recepções.'},
+  {id:4,name:'Sofá Modular Dune',category:'Estofados',brand:'Matéria Prima',price:9980,rating:4.7,stock:4,sku:'EST-004',description:'Sistema modular de sofá em bouclé natural, permite composições variadas para salas amplas.'},
+  {id:5,name:'Vaso Cerâmico Terra',category:'Decoração',brand:'Terra & Forma',price:420,rating:4.5,stock:22,sku:'DEC-005',description:'Vaso artesanal em cerâmica queimada a lenha, peça única com variações naturais de tom.'},
+  {id:6,name:'Tapete Kilim Alva',category:'Têxteis',brand:'Câmara Design',price:2300,rating:4.4,stock:9,sku:'TXT-006',description:'Tapete tecido à mão em lã crua com padronagem geométrica minimalista, 2x3m.'},
+  {id:7,name:'Cadeira Windsor Slim',category:'Cadeiras',brand:'Nordik',price:1890,rating:4.2,stock:12,sku:'CDR-007',description:'Releitura contemporânea da clássica Windsor, em freijó maciço com verniz fosco.'},
+  {id:8,name:'Mesa Lateral Orbe',category:'Mesas',brand:'Studio 406',price:1640,rating:4.6,stock:7,sku:'MSA-008',description:'Mesa lateral em formato circular com tampo em mármore travertino e base em latão.'},
+  {id:9,name:'Arandela Nimbus',category:'Iluminação',brand:'Lumen Co.',price:780,rating:4.1,stock:18,sku:'ILU-009',description:'Arandela de parede com difusor em vidro fosco e estrutura em metal preto fosco.'},
+  {id:10,name:'Poltrona Reclinável Vela',category:'Estofados',brand:'Matéria Prima',price:5400,rating:4.5,stock:6,sku:'EST-010',description:'Poltrona reclinável em couro legítimo com mecanismo silencioso e base giratória.'},
+  {id:11,name:'Espelho Solar',category:'Decoração',brand:'Terra & Forma',price:990,rating:4.7,stock:11,sku:'DEC-011',description:'Espelho de parede com moldura em latão espelhado, formato sol raiado.'},
+  {id:12,name:'Manta Boucle Nord',category:'Têxteis',brand:'Câmara Design',price:560,rating:4.3,stock:25,sku:'TXT-012',description:'Manta em bouclé 100% lã, tecida em tear tradicional, tons neutros.'},
+  {id:13,name:'Banqueta Alto Giro',category:'Cadeiras',brand:'Nordik',price:1120,rating:3.9,stock:14,sku:'CDR-013',description:'Banqueta alta giratória em madeira curvada com assento estofado em couro sintético.'},
+  {id:14,name:'Mesa de Centro Duna',category:'Mesas',brand:'Studio 406',price:2980,rating:4.6,stock:5,sku:'MSA-014',description:'Mesa de centro esculpida em bloco único de madeira maciça, acabamento natural oleado.'},
+  {id:15,name:'Luminária de Piso Aro',category:'Iluminação',brand:'Lumen Co.',price:1740,rating:4.4,stock:9,sku:'ILU-015',description:'Luminária de piso com aro de luz indireta em alumínio anodizado e base em mármore.'},
+  {id:16,name:'Sofá 3 Lugares Alma',category:'Estofados',brand:'Matéria Prima',price:8600,rating:4.8,stock:3,sku:'EST-016',description:'Sofá de três lugares em veludo cotelê, pés em latão maciço torneado.'},
+  {id:17,name:'Bandeja Decorativa Junco',category:'Decoração',brand:'Terra & Forma',price:260,rating:4.0,stock:30,sku:'DEC-017',description:'Bandeja trançada em junco natural com alças em couro cru, feita à mão.'},
+  {id:18,name:'Cortina Linho Bruma',category:'Têxteis',brand:'Câmara Design',price:890,rating:4.2,stock:16,sku:'TXT-018',description:'Cortina em linho puro com caimento fluido, entretela natural e ilhoses em latão.'},
+  {id:19,name:'Cadeira Office Studio',category:'Cadeiras',brand:'Nordik',price:2150,rating:4.5,stock:10,sku:'CDR-019',description:'Cadeira de escritório com estrutura em carvalho e estofado ergonômico em lã.'},
+  {id:20,name:'Mesa Console Fio',category:'Mesas',brand:'Studio 406',price:3360,rating:4.3,stock:0,sku:'MSA-020',description:'Console esguio em ferro trefilado e tampo em nogueira, ideal para halls de entrada.'}
+];
+
+const ACCENT_BORDER = 'oklch(58% 0.11 55)';
+const ACCENT_BG = 'oklch(58% 0.11 55 / 0.12)';
+const ACCENT_FG = 'oklch(40% 0.11 55)';
+const NEUTRAL_BORDER = 'oklch(87% 0.01 85)';
+const NEUTRAL_FG = 'oklch(35% 0.01 85)';
+
+class Component extends DCLogic {
+  state = {
+    page: 'catalog',
+    selectedId: null,
+    editingId: null,
+    search: '',
+    selectedCategories: [],
+    minPrice: 0,
+    maxPrice: 20000,
+    inStockOnly: false,
+    debugOpen: false,
+    toast: null,
+    products: RAW_PRODUCTS,
+    form: { name:'', category: CATEGORIES[0], brand:'', price:'', stock:'', description:'', sku:'' },
+    formErrors: {}
+  };
+
+  formatPrice(n){ return 'R$ ' + Number(n).toLocaleString('pt-BR'); }
+
+  goCatalog = () => this.setState({ page:'catalog', selectedId:null, editingId:null });
+  goCatalogPrevent = (e) => { e.preventDefault(); this.goCatalog(); };
+  openDetailFor = (id) => () => this.setState({ page:'detail', selectedId:id });
+  openEditFor = (id) => () => {
+    const p = this.state.products.find(pr=>pr.id===id);
+    this.setState({ page:'edit', editingId:id, formErrors:{}, form:{
+      name:p.name, category:p.category, brand:p.brand, price:String(p.price), stock:String(p.stock), description:p.description, sku:p.sku
+    }});
+  };
+  openCreate = () => this.setState({ page:'create', editingId:null, formErrors:{}, form:{
+    name:'', category: CATEGORIES[0], brand:'', price:'', stock:'', description:'', sku:''
+  }});
+  openEditCurrent = () => this.openEditFor(this.state.selectedId)();
+
+  toggleCategory = (c) => this.setState(s => {
+    const has = s.selectedCategories.includes(c);
+    return { selectedCategories: has ? s.selectedCategories.filter(x=>x!==c) : [...s.selectedCategories, c] };
+  });
+  toggleInStock = () => this.setState(s=>({ inStockOnly: !s.inStockOnly }));
+  toggleDebug = () => this.setState(s=>({ debugOpen: !s.debugOpen }));
+
+  handleSearchChange = (e) => this.setState({ search: e.target.value });
+  handleMinPriceChange = (e) => this.setState({ minPrice: Number(e.target.value) || 0 });
+  handleMaxPriceChange = (e) => this.setState({ maxPrice: Number(e.target.value) || 0 });
+  handleFieldChange = (e) => {
+    const { name, value } = e.target;
+    this.setState(s => ({ form: { ...s.form, [name]: value } }));
+  };
+
+  submitForm = () => {
+    const f = this.state.form;
+    const errors = {};
+    if (!f.name || !f.name.trim()) errors.name = 'Nome é obrigatório';
+    if (!f.brand || !f.brand.trim()) errors.brand = 'Marca é obrigatória';
+    const priceNum = Number(f.price);
+    if (f.price === '' || isNaN(priceNum) || priceNum <= 0) errors.price = 'Informe um preço válido';
+    const stockNum = Number(f.stock);
+    if (f.stock === '' || isNaN(stockNum) || stockNum < 0) errors.stock = 'Informe uma quantidade válida';
+    if (Object.keys(errors).length) { this.setState({ formErrors: errors }); return; }
+
+    const isEdit = this.state.page === 'edit';
+    if (isEdit) {
+      const id = this.state.editingId;
+      this.setState(s => ({
+        products: s.products.map(p => p.id === id ? {
+          ...p, name:f.name, category:f.category, brand:f.brand, price:priceNum, stock:stockNum,
+          description:f.description, sku: f.sku||p.sku
+        } : p),
+        page:'detail', selectedId:id, formErrors:{}, toast:'Produto atualizado com sucesso.'
+      }));
+    } else {
+      this.setState(s => {
+        const newId = Math.max(...s.products.map(p=>p.id)) + 1;
+        const sku = f.sku && f.sku.trim() ? f.sku : 'PRD-' + String(newId).padStart(3,'0');
+        const newProduct = { id:newId, name:f.name, category:f.category, brand:f.brand, price:priceNum, stock:stockNum, description:f.description, sku };
+        return { products:[newProduct, ...s.products], page:'catalog', selectedId:null, formErrors:{}, toast:'Produto cadastrado com sucesso.' };
+      });
+    }
+    setTimeout(()=> this.setState({ toast:null }), 3500);
+  };
+
+  getSimilar(product, all) {
+    const sameCat = all.filter(p=>p.id!==product.id && p.category===product.category);
+    const withinPrice = sameCat.filter(p=> Math.abs(p.price-product.price)/product.price <= 0.4);
+    let result = withinPrice.length >= 3 ? withinPrice : sameCat;
+    if (result.length < 3) {
+      const usedIds = new Set([product.id, ...result.map(p=>p.id)]);
+      const others = all.filter(p=>!usedIds.has(p.id)).sort((a,b)=>Math.abs(a.price-product.price)-Math.abs(b.price-product.price));
+      result = [...result, ...others].slice(0,4);
+    } else {
+      result = result.slice(0,4);
+    }
+    return result;
+  }
+
+  renderVals() {
+    const s = this.state;
+    const search = s.search.toLowerCase().trim();
+    const filteredProducts = s.products.filter(p =>
+      (search==='' || p.name.toLowerCase().includes(search) || p.category.toLowerCase().includes(search) || p.brand.toLowerCase().includes(search)) &&
+      (s.selectedCategories.length===0 || s.selectedCategories.includes(p.category)) &&
+      p.price >= s.minPrice && p.price <= s.maxPrice &&
+      (!s.inStockOnly || p.stock > 0)
+    ).map(p => ({
+      ...p,
+      priceLabel: this.formatPrice(p.price),
+      stockLabel: p.stock > 0 ? `${p.stock} em estoque` : 'Indisponível',
+      stockColor: p.stock > 0 ? 'oklch(45% 0.015 85)' : 'oklch(55% 0.15 25)',
+      openDetail: this.openDetailFor(p.id)
+    }));
+
+    const categoryChips = CATEGORIES.map(c => {
+      const active = s.selectedCategories.includes(c);
+      return { name:c, toggle: () => this.toggleCategory(c), borderColor: active?ACCENT_BORDER:NEUTRAL_BORDER, bg: active?ACCENT_BG:'transparent', fg: active?ACCENT_FG:NEUTRAL_FG };
+    });
+    let selectedProduct = null, similarProducts = [];
+    if (s.selectedId != null) {
+      const p = s.products.find(pr=>pr.id===s.selectedId);
+      if (p) {
+        selectedProduct = { ...p, priceLabel: this.formatPrice(p.price),
+          stockLabel: p.stock>0?`${p.stock} unidades em estoque`:'Indisponível no momento', stockColor: p.stock>0?'oklch(40% 0.09 145)':'oklch(55% 0.15 25)' };
+        similarProducts = this.getSimilar(p, s.products).map(sp => ({ ...sp, priceLabel: this.formatPrice(sp.price), openDetail: this.openDetailFor(sp.id) }));
+      }
+    }
+
+    const isCatalog = s.page === 'catalog';
+    const isDetail = s.page === 'detail' && !!selectedProduct;
+    const isForm = s.page === 'edit' || s.page === 'create';
+    const isEdit = s.page === 'edit';
+
+    let debugData, debugPageLabel;
+    if (isDetail) { debugData = selectedProduct; debugPageLabel = 'product-detail.json'; }
+    else if (isForm) { debugData = { page:s.page, editingId:s.editingId, form:s.form, errors:s.formErrors }; debugPageLabel = isEdit?'edit-form.json':'create-form.json'; }
+    else { debugData = { filters:{ search:s.search, selectedCategories:s.selectedCategories, minPrice:s.minPrice, maxPrice:s.maxPrice, inStockOnly:s.inStockOnly }, totalProducts:s.products.length, filteredCount:filteredProducts.length, products:filteredProducts.map(({openDetail,...rest})=>rest) }; debugPageLabel = 'catalog.json'; }
+
+    return {
+      isCatalog, isDetail, isForm, isEdit,
+      search: s.search, handleSearchChange: this.handleSearchChange,
+      goCatalog: this.goCatalog, goCatalogPrevent: this.goCatalogPrevent, openCreate: this.openCreate,
+      catalogNavColor: isCatalog ? ACCENT_FG : NEUTRAL_FG,
+      categoryChips,
+      minPrice: s.minPrice, maxPrice: s.maxPrice, handleMinPriceChange: this.handleMinPriceChange, handleMaxPriceChange: this.handleMaxPriceChange,
+      toggleInStock: this.toggleInStock,
+      stockToggleTrack: s.inStockOnly ? 'oklch(58% 0.11 55)' : 'oklch(87% 0.01 85)',
+      stockToggleThumbLeft: s.inStockOnly ? '18px' : '2px',
+      filteredProducts, hasResults: filteredProducts.length > 0,
+      resultsLabel: `${filteredProducts.length} produto${filteredProducts.length===1?'':'s'}`,
+      selectedProduct, similarProducts, openEditCurrent: this.openEditCurrent,
+      formTitle: isEdit ? 'Editar produto' : 'Cadastrar novo produto',
+      submitLabel: isEdit ? 'Salvar alterações' : 'Cadastrar produto',
+      submitForm: this.submitForm, handleFieldChange: this.handleFieldChange,
+      form: s.form, formErrors: s.formErrors, categoryOptions: CATEGORIES,
+      nameBorder: s.formErrors.name?'oklch(55% 0.15 25)':NEUTRAL_BORDER,
+      brandBorder: s.formErrors.brand?'oklch(55% 0.15 25)':NEUTRAL_BORDER,
+      priceBorder: s.formErrors.price?'oklch(55% 0.15 25)':NEUTRAL_BORDER,
+      stockBorder: s.formErrors.stock?'oklch(55% 0.15 25)':NEUTRAL_BORDER,
+      toast: s.toast,
+      debugOpen: s.debugOpen, toggleDebug: this.toggleDebug,
+      debugToggleLabel: s.debugOpen ? '</> fechar debug' : '</> debug',
+      debugPageLabel, debugJson: JSON.stringify(debugData, null, 2)
+    };
+  }
+}
+</script>
+</body>
+</html>
