@@ -22,6 +22,23 @@ const BATCH_SIZE = 100;
 const INDEX_POLL_INTERVAL_MS = 5000;
 const INDEX_POLL_TIMEOUT_MS = 180000;
 
+const ORDERS_COUNT = 20000;
+const ORDERS_HISTORY_DAYS = 90;
+const ORDERS_INSERT_BATCH_SIZE = 2000;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+// Mais pedidos à noite/fim de tarde do que de madrugada - um padrão típico de
+// e-commerce (pico de navegação fora do horário comercial).
+const HOUR_WEIGHTS = [
+  0.2, 0.1, 0.1, 0.1, 0.1, 0.2, // 0h-5h
+  0.4, 0.6, 0.8, 1.0, 1.1, 1.2, // 6h-11h
+  1.3, 1.3, 1.2, 1.2, 1.3, 1.4, // 12h-17h
+  1.6, 1.8, 1.9, 1.7, 1.3, 0.8, // 18h-23h
+];
+
+// Boost por dia da semana, indexado por Date#getDay() (0 = domingo ... 6 = sábado).
+const WEEKDAY_BOOST = [1.3, 1.0, 1.0, 1.0, 1.05, 1.2, 1.5];
+
 function loadJson(relativePath) {
   return JSON.parse(readFileSync(path.resolve(__dirname, relativePath), 'utf-8'));
 }
@@ -73,6 +90,121 @@ async function generateEmbeddings(products) {
     processed += batch.length;
     console.log(`  ${processed}/${products.length} embeddings generated`);
   }
+}
+
+function buildCumulativeWeights(weights) {
+  const cumulative = [];
+  let sum = 0;
+  for (const weight of weights) {
+    sum += weight;
+    cumulative.push(sum);
+  }
+  return cumulative;
+}
+
+// Escolhe um índice sorteando proporcionalmente aos pesos acumulados. Varredura
+// linear é suficiente aqui: os maiores arrays envolvidos (produtos, dias do
+// histórico) têm no máximo algumas centenas de posições.
+function pickWeightedIndex(cumulativeWeights) {
+  const roll = Math.random() * cumulativeWeights[cumulativeWeights.length - 1];
+  for (let i = 0; i < cumulativeWeights.length; i++) {
+    if (roll <= cumulativeWeights[i]) return i;
+  }
+  return cumulativeWeights.length - 1;
+}
+
+// Distribuição long-tail (tipo Pareto): poucos produtos concentram a maior
+// parte das vendas, como em um catálogo real, em vez de vendas uniformes entre
+// os 100 produtos.
+function buildProductWeights(products) {
+  return products.map(() => Math.random() ** 2.5);
+}
+
+// Pondera os SKUs de um produto por estoque cadastrado (proxy de quão "popular"
+// aquela variante costuma ser/é reposta) com um fator aleatório fixo por SKU,
+// calculado uma única vez para que a mesma variante seja consistentemente mais
+// ou menos vendida ao longo de todo o histórico gerado.
+function buildSkuWeights(product) {
+  const weights = product.skus.map((sku) => (sku.inventory + 1) * (0.4 + Math.random() * 1.2));
+  return buildCumulativeWeights(weights);
+}
+
+// Peso por dia dentro da janela do histórico: sazonalidade de fim de semana,
+// leve tendência de crescimento até a data mais recente, ruído dia-a-dia e
+// alguns "dias de pico" (promoções pontuais) - produz uma curva de vendas com
+// variação natural em vez de uma média constante por dia.
+function buildDayWeights(days) {
+  const weights = [];
+  for (let dayOffset = 0; dayOffset < days; dayOffset++) {
+    const date = new Date(Date.now() - (days - 1 - dayOffset) * MS_PER_DAY);
+    const weekdayBoost = WEEKDAY_BOOST[date.getDay()];
+    const growthTrend = 0.8 + (0.4 * dayOffset) / (days - 1);
+    const noise = 0.7 + Math.random() * 0.6;
+    weights.push(weekdayBoost * growthTrend * noise);
+  }
+
+  const spikeDayCount = Math.round(days * 0.04);
+  const spikeDays = new Set();
+  while (spikeDays.size < spikeDayCount) {
+    spikeDays.add(Math.floor(Math.random() * days));
+  }
+  for (const dayOffset of spikeDays) {
+    weights[dayOffset] *= 2.5 + Math.random() * 1.5;
+  }
+
+  return weights;
+}
+
+function randomQuantity() {
+  const roll = Math.random();
+  if (roll < 0.72) return 1;
+  if (roll < 0.9) return 2;
+  if (roll < 0.97) return 3;
+  return 4 + Math.floor(Math.random() * 2);
+}
+
+function randomTimestampForDay(dayOffset, days, hourCumulativeWeights) {
+  const dayStart = new Date(Date.now() - (days - 1 - dayOffset) * MS_PER_DAY);
+  dayStart.setHours(0, 0, 0, 0);
+  const hour = pickWeightedIndex(hourCumulativeWeights);
+  const minute = Math.floor(Math.random() * 60);
+  const second = Math.floor(Math.random() * 60);
+  return new Date(dayStart.getTime() + hour * 60 * 60 * 1000 + minute * 60 * 1000 + second * 1000);
+}
+
+// Gera pedidos históricos simulados dos últimos ORDERS_HISTORY_DAYS dias,
+// distribuídos de forma não-uniforme entre produtos e datas (ver helpers de
+// peso acima). Não decrementa o `inventory` real dos produtos: o histórico
+// representa vendas passadas, dissociadas do snapshot de estoque atual do
+// catálogo (que é o que a simulação de compra ao vivo em POST /orders usa).
+function generateHistoricalOrders(products) {
+  console.log(`Generating ${ORDERS_COUNT} historical orders across the last ${ORDERS_HISTORY_DAYS} days...`);
+
+  const productCumulativeWeights = buildCumulativeWeights(buildProductWeights(products));
+  const dayCumulativeWeights = buildCumulativeWeights(buildDayWeights(ORDERS_HISTORY_DAYS));
+  const skuCumulativeWeightsByProduct = products.map(buildSkuWeights);
+  const hourCumulativeWeights = buildCumulativeWeights(HOUR_WEIGHTS);
+
+  const orders = [];
+  for (let i = 0; i < ORDERS_COUNT; i++) {
+    const productIndex = pickWeightedIndex(productCumulativeWeights);
+    const product = products[productIndex];
+    const skuIndex = pickWeightedIndex(skuCumulativeWeightsByProduct[productIndex]);
+    const sku = product.skus[skuIndex];
+    const dayOffset = pickWeightedIndex(dayCumulativeWeights);
+
+    orders.push({
+      productId: product._id,
+      sku: sku.sku,
+      productName: product.name,
+      price: sku.price,
+      quantity: randomQuantity(),
+      createdAt: randomTimestampForDay(dayOffset, ORDERS_HISTORY_DAYS, hourCumulativeWeights),
+      status: 'simulated',
+    });
+  }
+
+  return orders;
 }
 
 async function createIndexes(collection) {
@@ -141,13 +273,17 @@ async function main() {
   await client.connect();
   const db = client.db(process.env.MONGODB_DB || 'catalog_demo');
   const collection = db.collection('products');
+  const ordersCollection = db.collection('orders');
 
   try {
     console.log('Clearing existing products...');
     await collection.deleteMany({});
 
     console.log(`Inserting ${products.length} products...`);
-    await collection.insertMany(products);
+    const { insertedIds } = await collection.insertMany(products);
+    products.forEach((product, index) => {
+      product._id = insertedIds[index];
+    });
 
     const indexResults = await createIndexes(collection);
     const readyToPoll = Object.entries(indexResults)
@@ -158,7 +294,17 @@ async function main() {
       await pollUntilQueryable(collection, readyToPoll);
     }
 
+    console.log('Clearing existing orders...');
+    await ordersCollection.deleteMany({});
+
+    const historicalOrders = generateHistoricalOrders(products);
+    console.log(`Inserting ${historicalOrders.length} historical orders...`);
+    for (const batch of chunk(historicalOrders, ORDERS_INSERT_BATCH_SIZE)) {
+      await ordersCollection.insertMany(batch, { ordered: false });
+    }
+
     console.log(`Done. Inserted ${products.length} products into "${db.databaseName}.products".`);
+    console.log(`Done. Inserted ${historicalOrders.length} orders into "${db.databaseName}.orders".`);
   } finally {
     await client.close();
   }

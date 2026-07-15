@@ -86,7 +86,7 @@ PORT=5000
 
 ### 2. Popular o banco (seed)
 
-Gera os embeddings dos 100 produtos do catálogo, insere os documentos no Atlas e cria os índices de busca (Atlas Search, Atlas Vector Search e índices MQL de suporte a filtros).
+Gera os embeddings dos 100 produtos do catálogo, insere os documentos no Atlas, cria os índices de busca (Atlas Search, Atlas Vector Search e índices MQL de suporte a filtros) e popula a coleção `orders` com ~20 mil pedidos históricos simulados dos últimos 3 meses.
 
 ```bash
 cd seed
@@ -94,7 +94,9 @@ npm install
 npm run seed
 ```
 
-O script é idempotente (`deleteMany` + `insertMany` a cada execução) e aguarda os índices Atlas ficarem `queryable` antes de terminar. Se a criação automática falhar (permissão insuficiente ou tier incompatível), ele imprime no console o JSON exato de cada índice para criação manual via **Atlas UI → Search → Create Search Index → JSON Editor**.
+O script é idempotente (`deleteMany` + `insertMany` a cada execução, tanto para `products` quanto para `orders`) e aguarda os índices Atlas ficarem `queryable` antes de terminar. Se a criação automática falhar (permissão insuficiente ou tier incompatível), ele imprime no console o JSON exato de cada índice para criação manual via **Atlas UI → Search → Create Search Index → JSON Editor**.
+
+Os pedidos históricos são distribuídos de forma não-uniforme entre produtos e datas — produtos mais "populares" concentram mais vendas (distribuição long-tail), e o volume diário varia por dia da semana, tendência de crescimento e picos aleatórios pontuais — para se aproximar de uma curva de vendas real em vez de dados de teste uniformes. Esse histórico não altera o `inventory` real dos SKUs: é um snapshot de vendas passadas, independente do estoque ao vivo decrementado pela simulação de compra (`POST /orders`).
 
 ### 3. Subir a aplicação
 
